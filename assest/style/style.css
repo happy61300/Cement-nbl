@@ -63,3 +63,8 @@ body {
   margin-right: 20px !important;
   max-width: 300px !important;
 }
+.border-gred-linear {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-image: linear-gradient(90deg, #ffa280 0%, #8fd9d9 100%) 1;
+}
