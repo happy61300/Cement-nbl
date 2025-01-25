@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+.roboto {
+  font-family: "Roboto Mono", serif;
+}
+@font-face {
+  font-family: "Avantt";
+  src: url(./../avantt-font-family-1737752230-0/AvanttTRIAL-Regular-BF6721a86b1a848.otf);
+}
+body {
+  font-family: "Avantt";
+  background: var(--Grey-2, rgba(215, 217, 221, 0.5));
+}
+.container {
+  max-width: 1440px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: 0px auto;
+}
+.bg-gred {
+  background: var(
+    --Gradient-02,
+    linear-gradient(90deg, #ffa280 0%, #8fd9d9 100%)
+  );
+}
+.border-bot {
+  border-bottom: 1px solid transparent;
+  border-image: 1px solid linear-gradient(90deg, #ffa280 0%, #8fd9d9 100%);
+  border-image-slice: 1;
+}
+/* .gred-hv:hover {
+  border: var(--Gradient-02, linear-gradient(90deg, #ffa280 0%, #8fd9d9 100%));
+} */
+@media (max-width: 1024px) {
+  .container {
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media (max-width: 359px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .border-c-liner {
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(90deg, #ffa280 0%, #8fd9d9 100%);
+    border-image-slice: 1;
+  }
+}
+
+/* slider */
+.swiper-pagination-bullet-active {
+  background-color: #494336 !important;
+}
+.swiper-slide {
+  margin-right: 20px !important;
+  max-width: 300px !important;
+}
