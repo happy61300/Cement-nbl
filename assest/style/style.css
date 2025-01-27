@@ -42,6 +42,11 @@ body {
     padding-left: 32px;
     padding-right: 32px;
   }
+  @media (max-width: 639px) {
+    .swiper-pagination-bullet {
+      background: white !important;
+    }
+  }
 }
 @media (max-width: 359px) {
   .container {
@@ -56,15 +61,3 @@ body {
 }
 
 /* slider */
-.swiper-pagination-bullet-active {
-  background-color: #494336 !important;
-}
-.swiper-slide {
-  margin-right: 20px !important;
-  max-width: 300px !important;
-}
-.border-gred-linear {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-image: linear-gradient(90deg, #ffa280 0%, #8fd9d9 100%) 1;
-}
