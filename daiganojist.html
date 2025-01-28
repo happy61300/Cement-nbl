@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nebula vets</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link
+      rel="shortcut icon"
+      href="./assetes/img/png/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assest/style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav>
+      <div class="bg-[#494336] fixed left-0 z-[11] right-0 top-0">
+        <div
+          class="max-w-[1440px] max-[359px]:px-4 px-8 md:px-10 xl:px-[50px] mx-auto"
+        >
+          <div
+            class="flex pb-[18px] pt-[15px] sm:pt-[11px] items-center justify-between"
+          >
+            <a href="#" class="block max-w-[90px] sm:max-w-[114px]">
+              <img class="w-full" src="./assest/img/logo.png" alt="" />
+            </a>
+            <div class="lg:flex gap-[33px] hidden items-center">
+              <a
+                href="#services"
+                class="text-sm text-[#D7D9DD] hover:text-[#8fd9d9] duration-300 font-medium tracking-[1.4px]"
+                >SERVICES</a
+              >
+              <a
+                href="#about"
+                class="text-sm text-[#D7D9DD] hover:text-[#8fd9d9] duration-300 font-medium tracking-[1.4px]"
+                >ABOUT US</a
+              >
+              <a
+                href="#location"
+                class="text-sm text-[#D7D9DD] hover:text-[#8fd9d9] duration-300 font-medium tracking-[1.4px]"
+                >LOCATION</a
+              >
+              <a
+                href="#career"
+                class="text-sm text-[#D7D9DD] hover:text-[#8fd9d9] duration-300 font-medium tracking-[1.4px]"
+                >CAREER</a
+              >
+              <a
+                href="#portal"
+                class="text-sm text-[#D7D9DD] hover:text-[#8fd9d9] duration-300 gred-hv font-medium tracking-[1.4px]"
+                >PATIENT PORTAL</a
+              >
+              <a
+                href="#"
+                class="text-base sm:text-lg font-medium text-[#494336] bg-gred roboto py-2 sm:py-3 px-6 sm:px-8 lg:px-[38px] font-medium tracking-[1.4px] rounded-[27px] hover:shadow-xl duration-300 hover:scale-[1.02]"
+                >BOOK NOW</a
+              >
+            </div>
+            <div class="lg:hidden">
+              <img
+                id="menu-bar"
+                class="cursor-pointer"
+                src="./assest/img/menu-bar.png"
+                alt="menubar"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div
+        id="sidebar"
+        class="sidebar fixed top-0 right-0 h-full w-64 bg-[#494336] w-full sm:w-[400px] text-white shadow-xl transition-all duration-300 ease-in-out z-50 hidden"
+      >
+        <div
+          class="flex justify-between -mt-3 items-center max-w-[1440px] max-[359px]:px-4 px-8 md:px-10 xl:px-[50px] mx-auto"
+        >
+          <div class="">
+            <a href="#" class="block !w-[90px] sm:w-[114px]">
+              <img
+                width="100%"
+                class="w-full"
+                src="./assest/img/logo.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="flex justify-end p-6">
+            <button id="closeSidebar" class="text-white text-6xl">
+              &times;
+            </button>
+          </div>
+        </div>
+        <ul class="gap-y-8 p-6 flex flex-col justify-center items-center">
+          <li><a href="#" class="text-lg">SERVICES</a></li>
+          <li><a href="#" class="text-lg">ABOUT US</a></li>
+          <li><a href="#" class="text-lg">LOCATION</a></li>
+          <li><a href="#" class="text-lg">CAREER</a></li>
+          <li><a href="#" class="text-lg">PATIENT PORTAL</a></li>
+          <li>
+            <a
+              href="#"
+              class="text-base sm:text-lg font-medium bg-gred px-7 py-4 rounded-3xl"
+              >BOOK NOW</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- Background Overlay -->
+      <div id="overlay" class="hidden fixed inset-0 bg-black/50 z-40"></div>
+    </nav>
+    <!-- hero-section -->
+    <section>
+      <div class="bg-[#494336] mt-[102px] sm:mt-[88px] lg:mt-[98px] relative">
+        <div
+          class="absolute right-0 max-md:top-0 md:bottom-10 max-sm:max-w-[283px] max-md:max-w-[300px] max-lg:max-w-[400px] max-xl:max-w-[500px] xl:max-w-[600px]"
+        >
+          <img
+            class="w-full"
+            src="./assest/img/Diagnostics Icon.png"
+            alt="bg-img"
+          />
+        </div>
+        <div class="max-w-[1220px] px-[32px] sm:px-[40px] mx-auto">
+          <div
+            class="max-w-[664px] pt-[176px] md:pt-[140px] pb-[65px] md:pb-[123px]"
+          >
+            <p
+              class="text-[32px] sm:text-[40px] md:text-[50px] lg:text-[60px] xl:text-[70px] text-[#D7D9DD] leading-[normal] mr-8"
+            >
+              Telemedicine
+            </p>
+            <p
+              class="text-sm sm:text-base md:text-lg lg:text-xl text-[#D7D9DD] leading-[157%] sm:leading-[130%] mt-[30px] sm:mt-5 mb-[51px] sm:mb-12"
+            >
+              Nebula Vets' online telemedicine service is a convenient and
+              innovative way to connect with our veterinary doctors from the
+              comfort of your own home. Through this platform, you can have a
+              virtual consultation with our experienced veterinarians, allowing
+              you to receive timely and expert advice for your pet's health
+              concerns without the need to physically visit our clinic.
+            </p>
+            <a
+              class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] rounded-[27px] hover:scale-[1.03] duration-200"
+              href="#"
+              >BOOK NOW</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- rays-mage section -->
+    <section>
+      <div class="bg-[rgba(215,217,221,0.50)] relative">
+        <div class="absolute bottom-0 w-full">
+          <img class="mx-auto" src="./assest/img/page-3-absolute.png" alt="" />
+        </div>
+        <div
+          class="max-w-[1160px] mx-auto px-[32px] sm:px-[40px] pt-[60px] sm:pt-20 pb-[120px] sm:pb-[130px] relative z-[1]"
+        >
+          <p
+            class="text-[#494336] text-2xl sm:text-[26px] md:text-[30px] lg:text-[36px] leading-[104%]"
+          >
+            Why use Telemedicine
+          </p>
+          <p
+            class="mt-[18px] sm:mt-[20px] text-[#494336] leading-[24px] text-sm sm:text-base md:text-lg"
+          >
+            Nebula Vets' online telemedicine service is designed to provide
+            immediate advice and guidance for various veterinary issues. Whether
+            you're unsure about the severity of a symptom or need assistance in
+            determining the best course of action for your pet, our experienced
+            veterinarians can offer real-time advice through the telemedicine
+            platform.
+          </p>
+          <p
+            class="text-[#494336] text-2xl sm:text-[26px] md:text-[30px] lg:text-[36px] leading-[104%] mt-[38px] sm:mt-10 mb-[18px] sm:mb-5"
+          >
+            During the online consultation
+          </p>
+          <p
+            class="text-[#494336] leading-[24px] text-sm sm:text-base md:text-lg"
+          >
+            Our veterinarians will carefully assess the information you provide
+            and ask relevant questions to better understand your pet's
+            condition. Based on their evaluation, they can advise you on whether
+            it's safe to monitor the situation at home or if furtherin-person
+            evaluation and treatment are necessary.
+          </p>
+          <p
+            class="text-[#494336] leading-[24px] text-sm sm:text-base md:text-lg my-[18px] sm:my-5"
+          >
+            This immediate access to professional veterinary advice can be
+            particularly valuable in situations where you're unsure if a symptom
+            or behavior is concerning enough to warrant a visit to the clinic.
+            It can save you time and unnecessary stress by providing clarity and
+            peace of mind.
+          </p>
+          <p
+            class="text-[#494336] leading-[24px] text-sm sm:text-base md:text-lg"
+          >
+            However, it's important to note that there are limitations to
+            telemedicine, and certain cases may still require an in-person visit
+            for a thorough examination or diagnostic tests. Our veterinarians
+            will use their expertise to determine the most appropriate course of
+            action based on the information provided during the telemedicine
+            consultation.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

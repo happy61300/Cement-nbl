@@ -14,21 +14,23 @@
       href="./assest/img/favicon.ico"
       type="image/x-icon"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <style>
+      .swiper-pagination-bullet-active {
+        background: #000000 !important ;
+      }
+      .swiper-pagination-bullet {
+        background: #464334 !important;
+        width: 30px;
+      }
+    </style>
+
     <title>Nebula Vets</title>
   </head>
-  <style>
-    .swiper-pagination-bullet-active {
-      background-color: #494336 !important;
-    }
-    .swiper-slide {
-      margin-right: 20px !important;
-    }
-    .border-gred-linear {
-      border-bottom-style: solid;
-      border-bottom-width: 2px;
-      border-image: linear-gradient(90deg, #ffa280 0%, #8fd9d9 100%) 1;
-    }
-  </style>
+
   <body>
     <!-- navbar -->
     <nav>
@@ -70,7 +72,7 @@
               >
               <a
                 href="#"
-                class="text-base sm:text-lg font-medium text-[#494336] bg-gred roboto py-2 sm:py-3 px-6 sm:px-8 lg:px-[38px] font-medium tracking-[1.4px] rounded-[27px] hover:shadow-xl duration-300 hover:scale-[1.02]"
+                class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] z-[11111111] bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] border border-gradient-to-r to-[#8FD9D9] from-[#FFA280] hover:bg-gradient-to-r-transparent rounded-[27px] hover:shadow-xl duration-200"
                 >BOOK NOW</a
               >
             </div>
@@ -85,358 +87,135 @@
           </div>
         </div>
       </div>
-
-      <!-- Sidebar -->
-      <div
-        id="sidebar"
-        class="sidebar fixed top-0 right-0 h-full w-64 bg-[#494336] w-full sm:w-[400px] text-white shadow-xl transition-all duration-300 ease-in-out z-50 hidden"
-      >
-        <div
-          class="flex justify-between -mt-3 items-center max-w-[1440px] max-[359px]:px-4 px-8 md:px-10 xl:px-[50px] mx-auto"
-        >
-          <div class="">
-            <a href="#" class="block !w-[90px] sm:w-[114px]">
-              <img
-                width="100%"
-                class="w-full"
-                src="./assest/img/logo.png"
-                alt=""
-              />
-            </a>
-          </div>
-          <div class="flex justify-end p-6">
-            <button id="closeSidebar" class="text-white text-6xl">
-              &times;
-            </button>
-          </div>
-        </div>
-        <ul class="gap-y-8 p-6 flex flex-col justify-center items-center">
-          <li><a href="#" class="text-lg">SERVICES</a></li>
-          <li><a href="#" class="text-lg">ABOUT US</a></li>
-          <li><a href="#" class="text-lg">LOCATION</a></li>
-          <li><a href="#" class="text-lg">CAREER</a></li>
-          <li><a href="#" class="text-lg">PATIENT PORTAL</a></li>
-          <li>
-            <a
-              href="#"
-              class="text-base sm:text-lg font-medium bg-gred px-7 py-4 rounded-3xl"
-              >BOOK NOW</a
-            >
-          </li>
-        </ul>
-      </div>
-
-      <!-- Background Overlay -->
-      <div id="overlay" class="hidden fixed inset-0 bg-black/50 z-40"></div>
     </nav>
-    <!-- hero-section -->
+    <!-- Sidebar -->
     <div
-      class="sm:bg-[url('./assest/img/hero-image.png')] pt-[142px] sm:pt-[282px] sm:pb-[85px] bg-cover bg-[100%]"
-      id="career"
+      id="sidebar"
+      class="sidebar fixed top-0 right-0 h-full w-64 bg-[#494336] w-full sm:w-[400px] text-white shadow-xl transition-all duration-300 ease-in-out z-50 hidden"
     >
       <div
-        class="max-w-[1440px] max-[359px]:px-4 px-8 md:px-10 xl:px-[50px] mx-auto"
+        class="flex justify-between -mt-3 items-center max-w-[1440px] max-[359px]:px-4 px-8 md:px-10 xl:px-[50px] mx-auto"
       >
-        <div
-          class="max-w-[230px] sm:max-w-[551px] sm:pl-[50px] lg:pl-[100px] xl:pl-[136px]"
-        >
-          <h1
-            class="text-[32px] sm:text-[40px] md:text-[48px] lg:text-[58px] xl:text-[70px] font-regular sm:mt-0 sm:text-[#D7D9DD] leading-[104%]"
-          >
-            Welcome to Nebula Vets
-          </h1>
-          <p
-            class="sm:text-[#D7D9DD] mt-2 sm:mt-4 lg:mt-[28px] text-base sm:txt-lg md:text-xl lg:text-2xl xl:text-[28px]"
-          >
-            Reinventing Pet Medicine
-          </p>
+        <div class="">
+          <a href="#" class="block !w-[90px] sm:w-[114px]">
+            <img
+              width="100%"
+              class="w-full"
+              src="./assest/img/logo.png"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="flex justify-end p-6">
+          <button id="closeSidebar" class="text-white text-6xl">&times;</button>
+        </div>
+      </div>
+      <ul class="gap-y-8 p-6 flex flex-col justify-center items-center">
+        <li><a href="#" class="text-lg">SERVICES</a></li>
+        <li><a href="#" class="text-lg">ABOUT US</a></li>
+        <li><a href="#" class="text-lg">LOCATION</a></li>
+        <li><a href="#" class="text-lg">CAREER</a></li>
+        <li><a href="#" class="text-lg">PATIENT PORTAL</a></li>
+        <li>
           <a
             href="#"
-            class="text-base sm:text-lg block w-fit mt-[45px] sm:mt-[38px] font-medium text-[#494336] bg-gred roboto py-2 sm:py-3 px-6 sm:px-8 lg:px-[38px] font-medium tracking-[1.4px] rounded-[27px] hover:shadow-xl duration-300 hover:scale-[1.02]"
+            class="text-base sm:text-lg font-medium bg-gred px-7 py-4 rounded-3xl"
             >BOOK NOW</a
           >
-        </div>
-      </div>
-      <div class="sm:hidden -mt-[34px]">
-        <img width="100%" src="./assest/img/small-hero.png" alt="" />
-      </div>
+        </li>
+      </ul>
     </div>
-    <!-- our-approach -->
-    <div
-      class="max-w-[1440px] max-[359px]:px-4 px-8 md:px-10 xl:px-[50px] mx-auto"
-    >
+
+    <!-- Background Overlay -->
+    <div id="overlay" class="hidden fixed inset-0 bg-black/50 z-40"></div>
+
+    <!-- hero -->
+    <section>
       <div
-        class="sm:px-[50px] lg:px-[100px] xl:px-[136px] py-[60px] md:py-[70px] xl:py-20"
+        class="bg-[#494336] overflow-hidden relative bg-no-repeat bg-right-bottom pt-[102px] sm:pt-[88px] lg:pt-[98px] pb-2.5 md:pb-0"
       >
         <div
-          class="flex md:flex-nowrap flex-wrap text-[#494336] justify-between gap-[13px] md:gap-10 lg:gap-[65px]"
+          class="absolute right-0 max-w-[211px] sm:max-w-[350px] lg:max-w-[400px] xl:max-w-[521px]"
         >
-          <p
-            class="md:max-w-[166px] text-2xl sm:text-3xl lg:text-[36px] leading-[130%]"
+          <img class="w-full" src="./assest/img/vccine.png" alt="" />
+        </div>
+        <div class="max-w-[1220px] px-[32px] sm:px-[40px] mx-auto">
+          <div
+            class="max-w-[660px] pt-[30px] sm:pt-[50px] md:pt-[80px] lg:pt-[100px] xl:pt-[140px] pb-[60px] min-[950px]:pb-[90px] text-[#D7D9DD]"
           >
-            Our Approach
-          </p>
-          <p
-            class="leading-[157.143%] md:!leading-[130%] text-sm sm:text-base md:text-lg lg:text-xl"
-          >
-            At our independent veterinary hospital, we combine compassion,
-            advanced expertise, and a commitment to exceptional care. From
-            routine check-ups to urgent and emergency situations, we are here to
-            provide your beloved pets with the highest level of service and
-            support they deserve.
-          </p>
+            <p
+              class="text-[32px] sm:text-[40px] mt-40 md:mt-0 md:text-[50px] lg:text-[60px] xl:text-[70px] leading-[normal]"
+            >
+              Vaccinations
+            </p>
+            <p
+              class="text-sm sm:text-base md:text-lg lg:text-xl leading-[157%] sm:leading-[130%] mt-[30px] sm:mt-5 mb-[51px] sm:mb-12"
+            >
+              Vaccinations are key in keeping your pet healthy and preventing
+              them catching life-threatening disease. Our veterinary team is
+              dedicated to providing comprehensive vaccination services tailored
+              to your pet's individual needs and lifestyle. This includes not
+              only dogs and cats but also rabbits and ferrets.
+            </p>
+            <a
+              class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] z-[11111111] bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] border border-gradient-to-r to-[#8FD9D9] from-[#FFA280] hover:bg-gradient-to-r-transparent rounded-[27px] hover:shadow-xl duration-200"
+              href="#"
+              >BOOK NOW</a
+            >
+          </div>
         </div>
       </div>
-    </div>
-    <!-- why-choose -->
-
+    </section>
+    <!-- Why should I vaccinate my pet? -->
     <section>
-      <div class="bg-[#494336]" id="location">
+      <div class="relative">
+        <div class="absolute bottom-0">
+          <img
+            width="100%"
+            src="./assest/img/page-3-absolute.png"
+            alt="absolute"
+          />
+        </div>
+        <div
+          class="relative z-[2] pb-[123px] lg:pb-[140px] sm:pt-20 pt-[60px] max-w-[1220px] px-[32px] sm:px-[40px] mx-auto"
+        >
+          <div
+            class="text-sm sm:text-base md:text-lg lg:text-xl text-[#494336]"
+          >
+            <p class="text-2xl sm:text-3xl lg:text-[36px]">
+              Why should I vaccinate my pet?
+            </p>
+            <p class="sm:mt-[30px] mt-5 !leading-[157%] sm:!leading-[130%]">
+              Vaccines are affective as the expose your pet’s immune system to
+              an inactive strain of infectious agents. This assists their body
+              to create immune cells that are specifically designed to respond
+              effectively when exposed to the disease. Vaccines are also
+              relatively painless, quick and cost-effective to administer.
+            </p>
+            <p class="text-2xl sm:text-3xl lg:text-[36px] mt-10">
+              What are core and non-core vaccines?
+            </p>
+            <p class="sm:mt-[30px] mt-5 !leading-[157%] sm:!leading-[130%]">
+              Core vaccines are often vaccines considered essential for your
+              pet’s health, whilst non-core vaccines are optional, and may be
+              recommended for your pet depending on their lifestyle. Our vets
+              will discuss the suitable vaccines for your pet during the
+              consultation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- core dog vaccine -->
+    <section>
+      <div class="bg-white">
         <div
           class="max-w-[1160px] px-[32px] sm:px-[40px] py-[60px] sm:py-[80px] mx-auto"
         >
-          <p
-            class="text-[#D7D9DD] text-2xl sm:text-[30px] md:text-[36px] lg:text-[42px] xl:text-[48px] mb-10 max-sm:text-center md:mb-[58px]"
-          >
-            Why choose Nebula Vets?
-          </p>
           <div
-            class="flex max-sm:flex-wrap gap-y-0 sm:gap-x-[25px] max-[850px]:gap-x-[40px] gap-x-[70px]"
+            class="flex flex-col gap-y-0 sm:gap-x-[25px] max-[850px]:gap-x-[40px] gap-x-[70px]"
           >
-            <div class="w-full sm:w-[50%]">
-              <button
-                class="toggle-button w-full items-center border-b-[2px] border-solid border-gred-linear"
-              >
-                <div
-                  class="flex justify-between w-full items-center pb-[20px] sm:pb-[32px] gap-1"
-                >
-                  <p
-                    class="text-base md:text-lg lg:text-xl text-[#D7D9DD] font-semibold text-start !leading-[150%] roboto-mono"
-                  >
-                    Cutting-Edge Technology
-                  </p>
-                  <span class="first-img">
-                    <svg
-                      class="max-md:w-6"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="30"
-                      height="30"
-                      viewBox="0 0 30 30"
-                      fill="none"
-                    >
-                      <line
-                        y1="15.1136"
-                        x2="30"
-                        y2="15.1136"
-                        stroke="url(#paint0_linear_1204_1399)"
-                        stroke-width="2.5"
-                      />
-                      <line
-                        x1="15.1134"
-                        y1="30"
-                        x2="15.1134"
-                        y2="7.28523e-08"
-                        stroke="url(#paint1_linear_1204_1399)"
-                        stroke-width="2.5"
-                      />
-                      <defs>
-                        <linearGradient
-                          id="paint0_linear_1204_1399"
-                          x1="0"
-                          y1="16.3636"
-                          x2="30"
-                          y2="16.3636"
-                          gradientUnits="userSpaceOnUse"
-                        >
-                          <stop stop-color="#FFA280" />
-                          <stop offset="1" stop-color="#8FD9D9" />
-                        </linearGradient>
-                        <linearGradient
-                          id="paint1_linear_1204_1399"
-                          x1="16.3634"
-                          y1="30"
-                          x2="16.3634"
-                          y2="0"
-                          gradientUnits="userSpaceOnUse"
-                        >
-                          <stop stop-color="#FFA280" />
-                          <stop offset="1" stop-color="#8FD9D9" />
-                        </linearGradient>
-                      </defs>
-                    </svg>
-                  </span>
-                  <span
-                    class="icon-open hidden second-img text-5xl text-[white]"
-                  >
-                    <img width="30px" src="./assest/img/Line.png" alt="" />
-                  </span>
-                </div>
-                <p
-                  class="hidden text-sm sm:text-base text-[#787878] text-start description text-start pr-2.5 pb-6"
-                >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-                  voluptas exercitationem rem sunt, ad illum quia doloremque
-                  odit provident earum atque voluptatem enim tempore sit cumque
-                  praesentium porro culpa ducimus ab fuga, cupiditate ipsa. Rem
-                  similique consectetur eos doloremque voluptas.
-                </p>
-              </button>
-              <button
-                class="toggle-button w-full items-center border-b-[2px] border-solid border-gred-linear"
-              >
-                <div
-                  class="flex justify-between w-full items-center pt-[15px] pb-[20px] sm:py-[32px] gap-1"
-                >
-                  <p
-                    class="text-base md:text-lg lg:text-xl text-[#D7D9DD] font-semibold text-start !leading-[150%] roboto-mono"
-                  >
-                    Independant
-                  </p>
-                  <span class="first-img">
-                    <svg
-                      class="max-md:w-6"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="30"
-                      height="30"
-                      viewBox="0 0 30 30"
-                      fill="none"
-                    >
-                      <line
-                        y1="15.1136"
-                        x2="30"
-                        y2="15.1136"
-                        stroke="url(#paint0_linear_1204_1399)"
-                        stroke-width="2.5"
-                      />
-                      <line
-                        x1="15.1134"
-                        y1="30"
-                        x2="15.1134"
-                        y2="7.28523e-08"
-                        stroke="url(#paint1_linear_1204_1399)"
-                        stroke-width="2.5"
-                      />
-                      <defs>
-                        <linearGradient
-                          id="paint0_linear_1204_1399"
-                          x1="0"
-                          y1="16.3636"
-                          x2="30"
-                          y2="16.3636"
-                          gradientUnits="userSpaceOnUse"
-                        >
-                          <stop stop-color="#FFA280" />
-                          <stop offset="1" stop-color="#8FD9D9" />
-                        </linearGradient>
-                        <linearGradient
-                          id="paint1_linear_1204_1399"
-                          x1="16.3634"
-                          y1="30"
-                          x2="16.3634"
-                          y2="0"
-                          gradientUnits="userSpaceOnUse"
-                        >
-                          <stop stop-color="#FFA280" />
-                          <stop offset="1" stop-color="#8FD9D9" />
-                        </linearGradient>
-                      </defs>
-                    </svg>
-                  </span>
-                  <span
-                    class="icon-open hidden second-img text-5xl text-[white]"
-                  >
-                    <img width="30px" src="./assest/img/Line.png" alt="" />
-                  </span>
-                </div>
-                <p
-                  class="hidden text-sm sm:text-base text-[#787878] text-start description text-start pr-2.5 pb-6"
-                >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-                  voluptas exercitationem rem sunt, ad illum quia doloremque
-                  odit provident earum atque voluptatem enim tempore sit cumque
-                  praesentium porro culpa ducimus ab fuga, cupiditate ipsa. Rem
-                  similique consectetur eos doloremque voluptas.
-                </p>
-              </button>
-              <button
-                class="toggle-button w-full items-center border-b-[2px] border-solid border-gred-linear"
-              >
-                <div
-                  class="flex justify-between w-full items-center pt-[15px] pb-[20px] sm:py-[32px] gap-1"
-                >
-                  <p
-                    class="text-base md:text-lg lg:text-xl text-[#D7D9DD] font-semibold text-start !leading-[150%] roboto-mono"
-                  >
-                    Progressive Medicine
-                  </p>
-                  <span class="first-img">
-                    <svg
-                      class="max-md:w-6"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="30"
-                      height="30"
-                      viewBox="0 0 30 30"
-                      fill="none"
-                    >
-                      <line
-                        y1="15.1136"
-                        x2="30"
-                        y2="15.1136"
-                        stroke="url(#paint0_linear_1204_1399)"
-                        stroke-width="2.5"
-                      />
-                      <line
-                        x1="15.1134"
-                        y1="30"
-                        x2="15.1134"
-                        y2="7.28523e-08"
-                        stroke="url(#paint1_linear_1204_1399)"
-                        stroke-width="2.5"
-                      />
-                      <defs>
-                        <linearGradient
-                          id="paint0_linear_1204_1399"
-                          x1="0"
-                          y1="16.3636"
-                          x2="30"
-                          y2="16.3636"
-                          gradientUnits="userSpaceOnUse"
-                        >
-                          <stop stop-color="#FFA280" />
-                          <stop offset="1" stop-color="#8FD9D9" />
-                        </linearGradient>
-                        <linearGradient
-                          id="paint1_linear_1204_1399"
-                          x1="16.3634"
-                          y1="30"
-                          x2="16.3634"
-                          y2="0"
-                          gradientUnits="userSpaceOnUse"
-                        >
-                          <stop stop-color="#FFA280" />
-                          <stop offset="1" stop-color="#8FD9D9" />
-                        </linearGradient>
-                      </defs>
-                    </svg>
-                  </span>
-                  <span
-                    class="icon-open hidden second-img text-5xl text-[white]"
-                  >
-                    <img width="30px" src="./assest/img/Line.png" alt="" />
-                  </span>
-                </div>
-                <p
-                  class="hidden text-sm sm:text-base text-[#787878] text-start description text-start pr-2.5 pb-6"
-                >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-                  voluptas exercitationem rem sunt, ad illum quia doloremque
-                  odit provident earum atque voluptatem enim tempore sit cumque
-                  praesentium porro culpa ducimus ab fuga, cupiditate ipsa. Rem
-                  similique consectetur eos doloremque voluptas.
-                </p>
-              </button>
-            </div>
-            <div class="w-full sm:w-[50%]">
+            <div class="w-full mt-8">
               <button
                 class="toggle-button w-full items-center border-b-[2px] border-solid border-gred-linear"
               >
@@ -444,9 +223,9 @@
                   class="flex justify-between w-full items-center max-sm:pt-[15px] pb-[20px] sm:pb-[32px] gap-1"
                 >
                   <p
-                    class="text-base md:text-lg lg:text-xl text-[#D7D9DD] font-semibold text-start !leading-[150%] roboto-mono"
+                    class="text-base md:text-lg lg:text-xl text-[#464334] font-semibold text-start !leading-[150%] roboto-mono roboto"
                   >
-                    Environmentally conscious
+                    Core Dog Vaccines
                   </p>
                   <span class="first-img">
                     <svg
@@ -501,17 +280,65 @@
                   <span
                     class="icon-open hidden second-img text-5xl text-[white]"
                   >
-                    <img width="30px" src="./assest/img/Line.png" alt="" />
+                    <svg
+                      class="max-md:w-6 rotate-[45deg]"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                    >
+                      <line
+                        y1="15.1136"
+                        x2="30"
+                        y2="15.1136"
+                        stroke="url(#paint0_linear_1204_1399)"
+                        stroke-width="2.5"
+                      />
+                      <line
+                        x1="15.1134"
+                        y1="30"
+                        x2="15.1134"
+                        y2="7.28523e-08"
+                        stroke="url(#paint1_linear_1204_1399)"
+                        stroke-width="2.5"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_1204_1399"
+                          x1="0"
+                          y1="16.3636"
+                          x2="30"
+                          y2="16.3636"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#FFA280" />
+                          <stop offset="1" stop-color="#8FD9D9" />
+                        </linearGradient>
+                        <linearGradient
+                          id="paint1_linear_1204_1399"
+                          x1="16.3634"
+                          y1="30"
+                          x2="16.3634"
+                          y2="0"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#FFA280" />
+                          <stop offset="1" stop-color="#8FD9D9" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
                   </span>
                 </div>
                 <p
                   class="hidden text-sm sm:text-base text-[#787878] text-start description text-start pr-2.5 pb-6"
                 >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-                  voluptas exercitationem rem sunt, ad illum quia doloremque
-                  odit provident earum atque voluptatem enim tempore sit cumque
-                  praesentium porro culpa ducimus ab fuga, cupiditate ipsa. Rem
-                  similique consectetur eos doloremque voluptas.
+                  FVRCP: A combination vaccine that protects against Feline
+                  Viral Rhinotracheitis, Calicivirus, and Panleukopenia. Rabies:
+                  Legally required in most states, for both indoor and outdoor
+                  cats Feline Leukemia Virus: A virus transmitted through cat
+                  bites during fights. It’s recommended for kittens even if they
+                  will not be going outdoors.
                 </p>
               </button>
               <button
@@ -521,9 +348,9 @@
                   class="flex justify-between w-full items-center pt-[15px] pb-[20px] sm:py-[32px] gap-1"
                 >
                   <p
-                    class="text-base md:text-lg lg:text-xl text-[#D7D9DD] font-semibold text-start !leading-[150%] roboto-mono"
+                    class="text-base md:text-lg lg:text-xl text-[#464334] font-semibold text-start !leading-[150%] roboto-mono roboto"
                   >
-                    Expert Team
+                    Non-Core Dog Vaccines
                   </p>
                   <span class="first-img">
                     <svg
@@ -578,17 +405,65 @@
                   <span
                     class="icon-open hidden second-img text-5xl text-[white]"
                   >
-                    <img width="30px" src="./assest/img/Line.png" alt="" />
+                    <svg
+                      class="max-md:w-6 rotate-[45deg]"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                    >
+                      <line
+                        y1="15.1136"
+                        x2="30"
+                        y2="15.1136"
+                        stroke="url(#paint0_linear_1204_1399)"
+                        stroke-width="2.5"
+                      />
+                      <line
+                        x1="15.1134"
+                        y1="30"
+                        x2="15.1134"
+                        y2="7.28523e-08"
+                        stroke="url(#paint1_linear_1204_1399)"
+                        stroke-width="2.5"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_1204_1399"
+                          x1="0"
+                          y1="16.3636"
+                          x2="30"
+                          y2="16.3636"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#FFA280" />
+                          <stop offset="1" stop-color="#8FD9D9" />
+                        </linearGradient>
+                        <linearGradient
+                          id="paint1_linear_1204_1399"
+                          x1="16.3634"
+                          y1="30"
+                          x2="16.3634"
+                          y2="0"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#FFA280" />
+                          <stop offset="1" stop-color="#8FD9D9" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
                   </span>
                 </div>
                 <p
                   class="hidden text-sm sm:text-base text-[#787878] text-start description text-start pr-2.5 pb-6"
                 >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-                  voluptas exercitationem rem sunt, ad illum quia doloremque
-                  odit provident earum atque voluptatem enim tempore sit cumque
-                  praesentium porro culpa ducimus ab fuga, cupiditate ipsa. Rem
-                  similique consectetur eos doloremque voluptas.
+                  Bordetella: A disease more commonly known as kennel cough and
+                  is required by dog boarding and daycare facilities. Lyme: Lyme
+                  Disease is carried by ticks and can be useful for dogs that
+                  visit areas, such as woodland areas, with high tick exposure.
+                  Canine Influenza Virus: Also called dog flu, a contagious
+                  virus that causes respiratory issues.
                 </p>
               </button>
               <button
@@ -598,9 +473,9 @@
                   class="flex justify-between w-full items-center pt-[15px] pb-[20px] sm:py-[32px] gap-1"
                 >
                   <p
-                    class="text-base md:text-lg lg:text-xl text-[#D7D9DD] font-semibold text-start !leading-[150%] roboto-mono"
+                    class="text-base md:text-lg lg:text-xl text-[#464334] font-semibold text-start !leading-[150%] roboto-mono roboto"
                   >
-                    Education
+                    Core Cat Vaccines
                   </p>
                   <span class="first-img">
                     <svg
@@ -655,17 +530,65 @@
                   <span
                     class="icon-open hidden second-img text-5xl text-[white]"
                   >
-                    <img width="30px" src="./assest/img/Line.png" alt="" />
+                    <svg
+                      class="max-md:w-6 rotate-[45deg]"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                    >
+                      <line
+                        y1="15.1136"
+                        x2="30"
+                        y2="15.1136"
+                        stroke="url(#paint0_linear_1204_1399)"
+                        stroke-width="2.5"
+                      />
+                      <line
+                        x1="15.1134"
+                        y1="30"
+                        x2="15.1134"
+                        y2="7.28523e-08"
+                        stroke="url(#paint1_linear_1204_1399)"
+                        stroke-width="2.5"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_1204_1399"
+                          x1="0"
+                          y1="16.3636"
+                          x2="30"
+                          y2="16.3636"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#FFA280" />
+                          <stop offset="1" stop-color="#8FD9D9" />
+                        </linearGradient>
+                        <linearGradient
+                          id="paint1_linear_1204_1399"
+                          x1="16.3634"
+                          y1="30"
+                          x2="16.3634"
+                          y2="0"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#FFA280" />
+                          <stop offset="1" stop-color="#8FD9D9" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
                   </span>
                 </div>
                 <p
                   class="hidden text-sm sm:text-base text-[#787878] text-start description text-start pr-2.5 pb-6"
                 >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-                  voluptas exercitationem rem sunt, ad illum quia doloremque
-                  odit provident earum atque voluptatem enim tempore sit cumque
-                  praesentium porro culpa ducimus ab fuga, cupiditate ipsa. Rem
-                  similique consectetur eos doloremque voluptas.
+                  FVRCP: A combination vaccine that protects against Feline
+                  Viral Rhinotracheitis, Calicivirus, and Panleukopenia. Rabies:
+                  Legally required in most states, for both indoor and outdoor
+                  cats Feline Leukemia Virus: A virus transmitted through cat
+                  bites during fights. It’s recommended for kittens even if they
+                  will not be going outdoors.
                 </p>
               </button>
             </div>
@@ -673,300 +596,189 @@
         </div>
       </div>
     </section>
-    <!-- our service -->
+    <!-- When to vaccinate? -->
     <section>
-      <div
-        class="max-w-[1440px] max-[359px]:px-4 px-8 md:px-10 xl:px-[50px] mx-auto bg-white"
-        id="services"
-      >
+      <div class="bg-white">
         <div
-          class="sm:px-[50px] lg:px-[100px] xl:px-[136px] py-[60px] md:py-[70px] xl:py-20"
+          class="max-w-[1160px] px-[32px] sm:px-[40px] py-[60px] sm:py-[80px] mx-auto"
         >
-          <div class="text-[#494336] max-w-[770px]">
-            <p class="text-2xl sm:text-3xl lg:text-[48px] leading-[130%]">
-              Our Services
-            </p>
-            <p
-              class="leading-[157.143%] md:!leading-[130%] mt-[28px] text-sm sm:text-base md:text-lg lg:text-xl"
-            >
-              We are proud to offer a comprehensive range of exceptional
-              clinical services to cater to all your pet's needs. From routine
-              wellness health checks to prompt and efficient urgent care, our
-              team is here to provide the highest level of support and
-              assistance. Count on us to be there for you and your beloved
-              companion every step of the way.
-            </p>
-            <div class="mt-12">
-              <a
-                href="#"
-                class="text-base sm:text-lg font-medium text-[#494336] bg-gred roboto py-2 sm:py-3 px-6 font-medium rounded-[27px] hover:shadow-xl duration-300 hover:scale-[1.02]"
-                >LEARN MORE</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Swiper -->
-      <div
-        class="swiper mySwiper !pb-[90px] sm:!pb-30 lg:!pb-[140px] max-w-[1440px] max-[359px]:px-4 px-8 md:px-10 xl:px-[50px] bg-white"
-      >
-        <div class="swiper-wrapper justify-center flex px-5">
-          <div class="swiper-slide">
-            <div
-              class="bg-[#494336] flex flex-col justify-start lg:max-w-[350px] xl:max-w-[400px] sm:pl-5 sm:pt-[25px] pt-3 pl-3 sm:pr-4 pr-3 h-[339px] sm:h-[419px]"
-            >
-              <div class="max-w-[93px]">
-                <img
-                  class="w-full"
-                  src="./assest/img/prevent-care.png"
-                  alt="prevent-care"
-                />
-              </div>
-              <div class="text-[#D7D9DD]">
-                <p
-                  class="text-2xl sm:text-[30px] lg:text-[36px] pt-6 sm:pt-7 md:pt-10 lg:pt-[50px]"
-                >
-                  Preventive Care
-                </p>
-                <a
-                  href="#"
-                  class="text-sm sm:text-base block lg:text-lg mt-[5px] underline text-start"
-                >
-                  Animal Health Check
-                </a>
-                <a
-                  href="#"
-                  class="text-sm sm:text-base block lg:text-lg mt-[5px] underline text-start"
-                >
-                  Vaccinations
-                </a>
-                <a
-                  href="#"
-                  class="text-sm sm:text-base block lg:text-lg mt-[5px] underline text-start"
-                >
-                  Dental
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div
-              class="bg-[#494336] flex flex-col justify-start lg:max-w-[350px] xl:max-w-[400px] sm:pl-5 sm:pt-[25px] pt-3 pl-3 sm:pr-4 pr-3 h-[339px] sm:h-[419px]"
-            >
-              <div class="max-w-[93px]">
-                <img
-                  class="w-full"
-                  src="./assest/img/sick.png"
-                  alt="prevent-care"
-                />
-              </div>
-              <div class="text-[#D7D9DD]">
-                <p
-                  class="text-2xl sm:text-[30px] block lg:text-[36px] pt-3 sm:pt-7 md:pt-10 2xl:whitespace-nowrap lg:pt-[30px]"
-                >
-                  Sick Patient Care
-                </p>
-                <a
-                  href="#"
-                  class="text-sm sm:text-base block max-w-[163px] lg:text-lg mt-[5px] underline text-start"
-                >
-                  Urgent & Emergency Care
-                </a>
-                <a
-                  href="#"
-                  class="text-sm sm:text-base block lg:text-lg mt-[5px] underline text-start"
-                >
-                  Telemedicine
-                </a>
-                <a
-                  href="#"
-                  class="text-sm sm:text-base block lg:text-lg mt-[5px] underline text-start"
-                >
-                  Diagnostics
-                </a>
-                <a
-                  href="#"
-                  class="text-sm sm:text-base block lg:text-lg mt-[5px] underline text-start"
-                >
-                  Pharmacy
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div
-              class="bg-[#494336] flex flex-col justify-start lg:max-w-[350px] xl:max-w-[400px] sm:pl-5 sm:pt-[25px] pt-3 pl-3 sm:pr-4 pr-3 h-[339px] sm:h-[419px]"
-            >
-              <div class="max-w-[93px]">
-                <img
-                  class="w-full"
-                  src="./assest/img/Surgery.png"
-                  alt="prevent-care"
-                />
-              </div>
-              <div class="text-[#D7D9DD]">
-                <p
-                  class="text-2xl sm:text-[30px] block whitespace-nowrap lg:text-[36px] pt-3 sm:pt-7 md:pt-10 lg:pt-[33px]"
-                >
-                  Surgery
-                </p>
-                <a
-                  href="#"
-                  class="text-sm sm:text-base block lg:text-lg mt-[5px] underline text-start"
-                >
-                  Surgeries
-                </a>
-                <a
-                  href="#"
-                  class="text-sm sm:text-base block lg:text-lg mt-[5px] underline text-start"
-                >
-                  Spay & Neuter
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div
-              class="bg-[#494336] flex flex-col justify-start lg:max-w-[350px] xl:max-w-[400px] sm:pl-5 sm:pt-[25px] pt-3 pl-3 sm:pr-4 pr-3 h-[339px] sm:h-[419px]"
-            >
-              <div class="max-w-[93px]">
-                <img
-                  class="w-full"
-                  src="./assest/img/Add-service.png"
-                  alt="prevent-care"
-                />
-              </div>
-              <div class="text-[#D7D9DD]">
-                <p
-                  class="text-2xl sm:text-[30px] lg:text-[36px] pt-3 sm:pt-7 md:pt-10 lg:pt-[30px]"
-                >
-                  Additional Services
-                </p>
-                <a
-                  href="#"
-                  class="text-sm sm:text-base block lg:text-lg mt-[5px] underline text-start"
-                >
-                  Travel Certificates
-                </a>
-                <a
-                  href="#"
-                  class="text-sm sm:text-base block lg:text-lg mt-[5px] underline text-start"
-                >
-                  Skin & Dermatology
-                </a>
-                <a
-                  href="#"
-                  class="text-sm sm:text-base block lg:text-lg mt-[5px] underline text-start"
-                >
-                  Euthanasia
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="relative">
-        <div
-          class="swiper-pagination absolute !-top-20 !right-0 !left-0 !w-auto"
-        ></div>
-      </div>
-    </section>
-    <!-- about -->
-    <section>
-      <div
-        class="bg-[#D7D9DD80] py-[33px] sm:py-12 lg:py-[80px] relative"
-        id="about"
-      >
-        <div
-          class="absolute -bottom-0 right-0 max-w-[189px] lg:top-0 lg:max-w-[348px] xl:max-w-[392px]"
-        >
-          <img
-            width="100%"
-            src="./assest/img/dog-section-absolutr.png"
-            alt="ab"
-          />
-        </div>
-        <div
-          class="max-w-[1440px] max-[359px]:px-4 px-8 md:px-10 xl:px-[50px] mx-auto"
-        >
-          <div
-            class="flex gap-[69px] flex-wrap lg:flex-nowrap justify-between items-center"
+          <h2
+            class="text-[#464334] text-2xl sm:text-4xl lg:text-[48px] text-gredient"
           >
-            <div class="lg:min-w-[400px] max-w-[591px] mx-auto lg:mx-0">
-              <img
-                class="w-full"
-                src="./assest/img/cat-dog.png"
-                alt="cat-dog"
-              />
+            When to vaccinate?
+          </h2>
+          <div class="text-[#D7D9DD] mt-10">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide !h-[461px] !lg:h-[471px]">
+                  <div
+                    class="bg-[#464334] h-full pt-5 md:pt-[34px] pr-3 md:pr-5 pl-8 md:pl-[48px] pb-8 md:pb-[57px]"
+                  >
+                    <div class="flex items-center gap-5">
+                      <img src="./assest/img/small-fox.png" alt="fox-card-1" />
+                      <p
+                        class="text-2xl sm:text-4xl lg:text-[48px] text-gredient"
+                      >
+                        Puppies Schedule
+                      </p>
+                    </div>
+                    <p
+                      class="roboto text-base sm:text-xl lg:text-2xl mt-3 sm:mt-4"
+                    >
+                      8 weeks:
+                    </p>
+                    <p>
+                      Distemper vaccine, Leptospirosis, Bordetella vaccine, Lyme
+                      vaccine & Canine Influenza Virus vaccine
+                    </p>
+                    <p
+                      class="roboto text-base sm:text-xl lg:text-2xl mt-3 sm:mt-4"
+                    >
+                      12 weeks:
+                    </p>
+                    <p>
+                      Distemper vaccine, Leptospirosis vaccine, Rabies vaccine,
+                      Lyme vaccine & Canine Influenza Virus vaccine
+                    </p>
+                    <p
+                      class="roboto text-base sm:text-xl lg:text-2xl mt-3 sm:mt-4"
+                    >
+                      Booster:
+                    </p>
+                    <p>Once a year</p>
+                  </div>
+                </div>
+                <div class="swiper-slide !h-[461px] !lg:h-[471px]">
+                  <div
+                    class="bg-[#464334] h-full pt-5 md:pt-[34px] pr-3 md:pr-5 pl-8 md:pl-[48px] pb-8 md:pb-[57px]"
+                  >
+                    <div class="flex items-center gap-5">
+                      <img src="./assest/img/kitten.png" alt="kitten" />
+                      <p
+                        class="text-2xl sm:text-4xl lg:text-[48px] text-gredient"
+                      >
+                        Kitten Schedule
+                      </p>
+                    </div>
+                    <p
+                      class="roboto text-base sm:text-xl lg:text-2xl mt-9 sm:mt-10"
+                    >
+                      8 weeks:
+                    </p>
+                    <p>FVRCP vaccine and Leukemia vaccines</p>
+                    <p
+                      class="roboto text-base sm:text-xl lg:text-2xl mt-9 sm:mt-10"
+                    >
+                      12 weeks:
+                    </p>
+                    <p>FVRCP vaccine, Leukemia vaccine& Rabies vaccine</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="text-[#494336] max-w-[639px]">
-              <h2 class="text-2xl sm:text-[35px] lg:text-[48px]">
-                About Nebula Vets ?
-              </h2>
-              <p
-                class="!leading-[130%] text-sm sm:text-base lg:text-lg mt-[13px] md:mt-6 mt-[38px]"
-              >
-                Founded on a strong set of core values, the story of Nebula Vets
-                began with Daniel Hodnett-Lewis, a visionary veterinary surgeon
-                from England, UK. Fueled by a deep passion for animals and a
-                desire to elevate the standard of care, Daniel embarked on a
-                mission to create a veterinary practice that would revolutionize
-                the way pets are treated and cared for. Here's the story of
-                Nebula Vets:
-              </p>
-              <div class="mt-12 pb-[60px]">
-                <a
-                  href="#"
-                  class="text-base sm:text-lg font-medium text-[#494336] bg-gred roboto py-2 sm:py-3 px-6 sm:px-8 lg:px-[38px] font-medium rounded-[27px] hover:shadow-xl duration-300 hover:scale-[1.02]"
-                  >LEARN MORE</a
+            <div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="swiper mySwiper mt-20 sm:mt-[22px]">
+              <div class="swiper-wrapper">
+                <div
+                  class="swiper-slide !h-[333px] !sm:h-[390px] !lg:h-[471px]"
                 >
+                  <div
+                    class="bg-[#464334] h-full pt-5 md:pt-[34px] pr-3 md:pr-5 pl-8 md:pl-[48px] pb-8 md:pb-[57px]"
+                  >
+                    <div class="flex items-center gap-5">
+                      <img src="./assest/img/small-fox.png" alt="fox-card-1" />
+                      <p
+                        class="text-2xl sm:text-4xl lg:text-[48px] text-gredient text-gradient-to-or to-[#ffa280] from-[#8fd9cb]"
+                      >
+                        Adult Dog Schedule
+                      </p>
+                    </div>
+
+                    <p class="mt-9 sm:mt-10">
+                      Rabies: One year after the initial puppy vaccine, then
+                      every three years Distemper: Every three years Bordetella:
+                      Every year Leptospirosis: Every year Canine influenza:
+                      Every year Lyme disease: Every year
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide !h-[333px] !sm:h-[390px] !lg:h-[471px]"
+                >
+                  <div
+                    class="bg-[#464334] h-full pt-5 md:pt-[34px] pr-3 md:pr-5 pl-8 md:pl-[48px] pb-8 md:pb-[57px]"
+                  >
+                    <div class="flex items-center gap-5">
+                      <img src="./assest/img/kitten.png" alt="fox-card-1" />
+                      <p
+                        class="text-2xl sm:text-4xl lg:text-[48px] text-gredient"
+                      >
+                        Puppies Schedule
+                      </p>
+                    </div>
+
+                    <p class="leading-[127%] mt-9 sm:mt-10">
+                      FVRCP: Every year Rabies: Every three years Feline
+                      Leukemia Virus: Every year
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="relative">
+          <div
+            class="swiper-pagination absolute !bottom-0 !top-auto !w-auto"
+          ></div>
+        </div>
       </div>
     </section>
-    <!-- footer -->
-    <footer>
+
+    <!-- forward to seeing -->
+    <section>
       <div
-        class="bg-[#494336] relative border-b-[2px] border-solid border-[#D8DADC] max-lg:pb-[142px]"
+        class="bg-[#494336] relative border-b-[2px] border-solid border-[#D8DADC] max-md:pb-[106px]"
       >
         <div
-          class="absolute right-0 min-md:right-[37px] max-sm:max-w-[288px] !max-lg lg:max-w-[350px]:xl:max-w-[400px] !max-xl:max-w-[500px] bottom-0"
+          class="absolute right-0 w-[300px] sm:w-[400px] md:w-[600px] bottom-0"
         >
           <img
             class="w-full"
-            src="./assest/img/dog-image.png"
-            alt="dog-cat-img"
+            src="./assest/img/rays-vacckine.png"
+            alt="bg-img"
           />
         </div>
         <div
           class="max-w-[1160px] px-[32px] sm:px-[40px] py-[60px] sm:py-[80px] mx-auto"
-          id="portal"
         >
-          <div class="max-w-[568px]">
+          <div class="max-w-[867px]">
             <p
-              class="text-2xl sm:text-[30px] md:text-[36px] lg:text-[42px] xl:text-[48px] text-[#D7D9DD] mb-[13px] sm:mb-[20px] md:mb-[30px]"
+              class="text-2xl sm:text-[30px] md:text-[36px] text-[#D7D9DD] mb-[32px] md:mb-[30px]"
             >
-              Our Mission
+              We look forward to seeing you and your pet soon!
             </p>
             <p
               class="text-sm sm:text-base md:text-lg lg:text-xl text-[#D7D9DD] !leading-[26px] mb-[38px] sm:mb-10"
             >
-              Our Mission is to establish a new standard of excellence in
-              veterinary care, driven by an unwavering ethical conscience.
+              Schedule an animal health check at Nebula Vets today, and let us
+              embark on a journey of comprehensive care for your cherished
+              companion. Together, we will nurture their health and happiness,
+              one check-up at a time.
             </p>
             <a
-              class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] rounded-[27px] hover:shadow-xl duration-300 hover:scale-[1.02]"
+              class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] rounded-[27px] hover:scale-[1.03] duration-200"
               href="#"
               >BOOK NOW</a
             >
           </div>
         </div>
       </div>
-
-      <!-- footer -->
-
+    </section>
+    <!-- footer -->
+    <footer>
       <div class="bg-[#494336]">
         <div class="max-w-[1364px] px-8 max-sm:pb-[111px] py-[60px] mx-auto">
           <div class="flex justify-between gap-10 max-[950px]:flex-wrap">
@@ -1078,22 +890,22 @@
                 </p>
                 <div class="flex flex-col gap-[7px]">
                   <a
-                    class="text-[#D7D9DD] text-sm sm:text-base text-underline hover:text-[#8fd9d9]"
+                    class="text-[#D7D9DD] text-sm sm:text-base text-underline"
                     href="#"
                     >Preventive Care</a
                   >
                   <a
-                    class="text-[#D7D9DD] text-sm sm:text-base text-underline hover:text-[#8fd9d9]"
+                    class="text-[#D7D9DD] text-sm sm:text-base text-underline"
                     href="#"
                     >Sick Patient Care</a
                   >
                   <a
-                    class="text-[#D7D9DD] text-sm sm:text-base text-underline hover:text-[#8fd9d9]"
+                    class="text-[#D7D9DD] text-sm sm:text-base text-underline"
                     href="#"
                     >Surgery</a
                   >
                   <a
-                    class="text-[#D7D9DD] text-sm sm:text-base text-underline hover:text-[#8fd9d9]"
+                    class="text-[#D7D9DD] text-sm sm:text-base text-underline"
                     href="#"
                     >Additional Services</a
                   >
@@ -1107,12 +919,12 @@
                 </p>
                 <div class="flex flex-col gap-[7px]">
                   <a
-                    class="text-[#D7D9DD] text-sm sm:text-base text-underline hover:text-[#8fd9d9]"
+                    class="text-[#D7D9DD] text-sm sm:text-base text-underline"
                     href="#"
                     >About us</a
                   >
                   <a
-                    class="text-[#D7D9DD] text-sm sm:text-base text-underline hover:text-[#8fd9d9]"
+                    class="text-[#D7D9DD] text-sm sm:text-base text-underline"
                     href="#"
                     >Carreers</a
                   >
@@ -1128,13 +940,13 @@
                 </p>
                 <div class="flex flex-col gap-[7px]">
                   <a
-                    class="text-[#D7D9DD] text-sm sm:text-base text-underline hover:text-[#8fd9d9]"
-                    href="tel:+91 2121234567"
+                    class="text-[#D7D9DD] text-sm sm:text-base text-underline"
+                    href="#"
                     >Phone: (212) 123-4567</a
                   >
                   <a
-                    class="text-[#D7D9DD] text-sm sm:text-base text-underline hover:text-[#8fd9d9]"
-                    href="mailto:hello@gmail.com"
+                    class="text-[#D7D9DD] text-sm sm:text-base text-underline"
+                    href="#"
                     >hello@nebulavets.com</a
                   >
                 </div>
@@ -1145,7 +957,7 @@
       </div>
     </footer>
 
-    <!-- scripts -->
+    <!-- script-of -sidebar -->
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         const menuBar = document.getElementById("menu-bar");
@@ -1169,31 +981,7 @@
         });
       });
     </script>
-    <script>
-      // Select all accordion items
-      const accordionItems = document.querySelectorAll(".accordion-item");
-
-      // Loop through each item and add an event listener to the plus/minus image
-      accordionItems.forEach((item) => {
-        const plusImage = item.querySelector(".plus");
-        const content = item.querySelector(".accordion-content");
-
-        plusImage.addEventListener("click", () => {
-          // Toggle active class on the item (shows the content)
-          item.classList.toggle("active");
-
-          // Toggle the plus/minus icon (rotate)
-          plusImage.classList.toggle("rotated");
-
-          // Optionally, you can also toggle the content visibility using the 'active' class
-          if (item.classList.contains("active")) {
-            content.style.display = "block"; // Show content
-          } else {
-            content.style.display = "none"; // Hide content
-          }
-        });
-      });
-    </script>
+    <!-- plus minus -->
     <script>
       const buttons = document.querySelectorAll(".toggle-button");
       buttons.forEach((button) => {
@@ -1223,32 +1011,34 @@
         });
       });
     </script>
-    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
+    <!-- 1 -->
     <script>
       var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 4,
-
         pagination: {
           el: ".swiper-pagination",
-          clickable: true,
         },
         breakpoints: {
           300: {
-            slidesPerView: 1.3,
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+
+            autoplay: {
+              delay: 2500,
+              disableOnInteraction: false,
+            },
           },
           640: {
             slidesPerView: 2,
+            spaceBetween: 20,
+            loop: true,
+
+            autoplay: {
+              delay: 2500,
+              disableOnInteraction: false,
+            },
           },
-          768: {
-            slidesPerView: 3,
-          },
-          1024: {
-            slidesPerView: 3,
-          },
-          1200: { slidesPerView: 4 },
         },
       });
     </script>
