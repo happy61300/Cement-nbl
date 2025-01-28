@@ -53,15 +53,15 @@ body {
     padding-left: 16px;
     padding-right: 16px;
   }
-  .border-c-liner {
-    border-bottom: 2px solid transparent;
-    border-image: linear-gradient(90deg, #ffa280 0%, #8fd9d9 100%);
-    border-image-slice: 1;
-  }
+}
+.border-gred-linear {
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(90deg, #ffa280 0%, #8fd9d9 100%);
+  border-image-slice: 1;
 }
 
 .text-gredient {
-  background: linear-gradient(180deg, #ffa280 0%, #8fd9cb 100%);
+  background: linear-gradient(90deg, #ffa280 0%, #8fd9cb 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

@@ -211,7 +211,7 @@
                   class="flex justify-between w-full items-center pb-[20px] sm:pb-[32px] gap-1"
                 >
                   <p
-                    class="text-base md:text-lg lg:text-xl text-[#D7D9DD] font-semibold text-start !leading-[150%] roboto-mono"
+                    class="text-base md:text-lg lg:text-xl text-[#D7D9DD] font-semibold text-start !leading-[150%] roboto"
                   >
                     Cutting-Edge Technology
                   </p>
@@ -288,7 +288,7 @@
                   class="flex justify-between w-full items-center pt-[15px] pb-[20px] sm:py-[32px] gap-1"
                 >
                   <p
-                    class="text-base md:text-lg lg:text-xl text-[#D7D9DD] font-semibold text-start !leading-[150%] roboto-mono"
+                    class="text-base md:text-lg lg:text-xl text-[#D7D9DD] font-semibold text-start !leading-[150%] roboto"
                   >
                     Independant
                   </p>
@@ -365,7 +365,7 @@
                   class="flex justify-between w-full items-center pt-[15px] pb-[20px] sm:py-[32px] gap-1"
                 >
                   <p
-                    class="text-base md:text-lg lg:text-xl text-[#D7D9DD] font-semibold text-start !leading-[150%] roboto-mono"
+                    class="text-base md:text-lg lg:text-xl text-[#D7D9DD] font-semibold text-start !leading-[150%] roboto"
                   >
                     Progressive Medicine
                   </p>
@@ -444,7 +444,7 @@
                   class="flex justify-between w-full items-center max-sm:pt-[15px] pb-[20px] sm:pb-[32px] gap-1"
                 >
                   <p
-                    class="text-base md:text-lg lg:text-xl text-[#D7D9DD] font-semibold text-start !leading-[150%] roboto-mono"
+                    class="text-base md:text-lg lg:text-xl text-[#D7D9DD] font-semibold text-start !leading-[150%] roboto"
                   >
                     Environmentally conscious
                   </p>
@@ -521,7 +521,7 @@
                   class="flex justify-between w-full items-center pt-[15px] pb-[20px] sm:py-[32px] gap-1"
                 >
                   <p
-                    class="text-base md:text-lg lg:text-xl text-[#D7D9DD] font-semibold text-start !leading-[150%] roboto-mono"
+                    class="text-base md:text-lg lg:text-xl text-[#D7D9DD] font-semibold text-start !leading-[150%] roboto"
                   >
                     Expert Team
                   </p>
@@ -598,7 +598,7 @@
                   class="flex justify-between w-full items-center pt-[15px] pb-[20px] sm:py-[32px] gap-1"
                 >
                   <p
-                    class="text-base md:text-lg lg:text-xl text-[#D7D9DD] font-semibold text-start !leading-[150%] roboto-mono"
+                    class="text-base md:text-lg lg:text-xl text-[#D7D9DD] font-semibold text-start !leading-[150%] roboto"
                   >
                     Education
                   </p>
@@ -957,7 +957,7 @@
               veterinary care, driven by an unwavering ethical conscience.
             </p>
             <a
-              class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] rounded-[27px] hover:shadow-xl duration-300 hover:scale-[1.02]"
+              class="roboto text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] rounded-[27px] hover:shadow-xl duration-300 hover:scale-[1.02]"
               href="#"
               >BOOK NOW</a
             >
@@ -972,7 +972,7 @@
           <div class="flex justify-between gap-10 max-[950px]:flex-wrap">
             <div class="max-w-[309px]">
               <label
-                class="text-[#D7D9DD] text-base sm:text-lg md:text-xl lg:text-2xl mb-6 roboto-mono"
+                class="text-[#D7D9DD] text-base sm:text-lg md:text-xl lg:text-2xl mb-6 roboto"
                 for="email"
                 >Stay in touch:</label
               >
@@ -1072,7 +1072,7 @@
             >
               <div class="flex flex-col gap-[10px] md:gap-[30px]">
                 <p
-                  class="roboto-mono text-[#D7D9DD] text-base sm:text-lg md:text-xl lg:text-2xl"
+                  class="roboto text-[#D7D9DD] text-base sm:text-lg md:text-xl lg:text-2xl"
                 >
                   Services
                 </p>
@@ -1101,7 +1101,7 @@
               </div>
               <div class="flex flex-col gap-[10px] md:gap-[30px]">
                 <p
-                  class="roboto-mono text-[#D7D9DD] text-base sm:text-lg md:text-xl lg:text-2xl"
+                  class="roboto text-[#D7D9DD] text-base sm:text-lg md:text-xl lg:text-2xl"
                 >
                   Company
                 </p>
@@ -1122,7 +1122,7 @@
                 class="flex flex-col gap-[10px] md:gap-[30px] xl:ml-[57px] xl:mr-[145px]"
               >
                 <p
-                  class="roboto-mono text-[#D7D9DD] text-base sm:text-lg md:text-xl lg:text-2xl"
+                  class="roboto text-[#D7D9DD] text-base sm:text-lg md:text-xl lg:text-2xl"
                 >
                   Contact Us
                 </p>
@@ -1152,20 +1152,24 @@
         const closeSidebar = document.getElementById("closeSidebar");
         const sidebar = document.getElementById("sidebar");
         const overlay = document.getElementById("overlay");
+        const body = document.body;
 
         menuBar.addEventListener("click", () => {
           sidebar.classList.remove("hidden");
           overlay.classList.remove("hidden");
+          body.classList.add("overflow-hidden");
         });
 
         closeSidebar.addEventListener("click", () => {
           sidebar.classList.add("hidden");
           overlay.classList.add("hidden");
+          body.classList.remove("overflow-hidden");
         });
 
         overlay.addEventListener("click", () => {
           sidebar.classList.add("hidden");
           overlay.classList.add("hidden");
+          body.classList.remove("overflow-hidden");
         });
       });
     </script>
