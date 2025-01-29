@@ -15,94 +15,251 @@
     />
 
     <!-- Demo styles -->
-    <style></style>
+    <style>
+      .swiper-pagination-bullet-active {
+        background-color: #494336 !important;
+      }
+      /* .swiper-slide {
+        margin-right: 20px !important;
+      } */
+      .border-gred-linear {
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+        border-image: linear-gradient(90deg, #ffa280 0%, #8fd9d9 100%) 1;
+      }
+    </style>
   </head>
 
   <body>
     <!-- Swiper -->
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div
-            class="bg-[#464334] pt-5 md:pt-[34px] pr-3 md:pr-5 pl-8 md:pl-[48px] pb-8 md:pb-[57px]"
-          >
-            <div class="flex items-center gap-5">
-              <img src="./assest/img/small-fox.png" alt="fox-card-1" />
-              <p class="text-2xl sm:text-4xl lg:text-[48px]">
-                Puppies Schedule
-              </p>
+    <section>
+      <div
+        class="max-w-[1440px] max-[359px]:px-4 px-8 md:px-10 xl:px-[50px] mx-auto bg-white"
+      >
+        <div
+          class="sm:px-[50px] lg:px-[100px] xl:px-[136px] py-[60px] md:py-[70px] xl:py-20"
+        >
+          <div class="text-[#494336] max-w-[770px]">
+            <p class="text-2xl sm:text-3xl lg:text-[48px] leading-[130%]">
+              Our Services
+            </p>
+            <p
+              class="leading-[157.143%] md:!leading-[130%] mt-[28px] text-sm sm:text-base md:text-lg lg:text-xl"
+            >
+              We are proud to offer a comprehensive range of exceptional
+              clinical services to cater to all your pet's needs. From routine
+              wellness health checks to prompt and efficient urgent care, our
+              team is here to provide the highest level of support and
+              assistance. Count on us to be there for you and your beloved
+              companion every step of the way.
+            </p>
+            <div class="mt-12">
+              <div class="w-fit py-2 sm:py-3 overflow-hidden z-[1] relative">
+                <a
+                  href="#"
+                  class="text-base sm:text-lg font-medium text-[#494336] bg-gred roboto py-2 sm:py-3 px-6 sm:px-8 lg:px-[38px] font-medium tracking-[1.4px] rounded-[27px] duration-300"
+                  >LEARN MORE</a
+                >
+              </div>
             </div>
-            <p class="roboto text-base sm:text-xl lg:text-2xl mt-2">8 weeks:</p>
-            <p>
-              Distemper vaccine, Leptospirosis, Bordetella vaccine, Lyme vaccine
-              & Canine Influenza Virus vaccine
-            </p>
-            <p class="roboto text-base sm:text-xl lg:text-2xl">12 weeks:</p>
-            <p>
-              Distemper vaccine, Leptospirosis vaccine, Rabies vaccine, Lyme
-              vaccine & Canine Influenza Virus vaccine
-            </p>
-            <p class="roboto text-base sm:text-xl lg:text-2xl mt-2">Booster:</p>
-            <p>Once a year</p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div
-            class="bg-[#464334] pt-5 md:pt-[34px] pr-3 md:pr-5 pl-8 md:pl-[48px] pb-8 md:pb-[57px]"
-          >
-            <div class="flex items-center gap-5">
-              <img src="./assest/img/small-fox.png" alt="fox-card-1" />
-              <p class="text-2xl sm:text-4xl lg:text-[48px]">
-                Puppies Schedule
-              </p>
-            </div>
-            <p class="roboto text-base sm:text-xl lg:text-2xl mt-2">8 weeks:</p>
-            <p>
-              Distemper vaccine, Leptospirosis, Bordetella vaccine, Lyme vaccine
-              & Canine Influenza Virus vaccine
-            </p>
-            <p class="roboto text-base sm:text-xl lg:text-2xl">12 weeks:</p>
-            <p>
-              Distemper vaccine, Leptospirosis vaccine, Rabies vaccine, Lyme
-              vaccine & Canine Influenza Virus vaccine
-            </p>
-            <p class="roboto text-base sm:text-xl lg:text-2xl mt-2">Booster:</p>
-            <p>Once a year</p>
           </div>
         </div>
       </div>
-      <div class="swiper-pagination"></div>
-    </div>
+      <!-- Swiper -->
+      <div
+        class="swiper mySwiper !pb-[90px] sm:!pb-30 lg:!pb-[140px] max-w-[1440px] max-[359px]:px-4 px-8 md:px-10 xl:px-[50px] bg-white mx-auto"
+      >
+        <div class="swiper-wrapper justify-center flex px-5">
+          <div class="swiper-slide">
+            <div
+              class="bg-[#494336] flex flex-col justify-start lg:max-w-[350px] xl:max-w-[400px] sm:pl-5 sm:pt-[25px] pt-3 pl-3 sm:pr-4 pr-3 h-[339px] sm:h-[419px]"
+            >
+              <div class="max-w-[93px]">
+                <img
+                  class="w-full"
+                  src="./assest/img/prevent-care.png"
+                  alt="prevent-care"
+                />
+              </div>
+              <div class="text-[#D7D9DD]">
+                <p
+                  class="text-2xl sm:text-[30px] lg:text-[36px] pt-6 sm:pt-7 md:pt-10 lg:pt-[50px]"
+                >
+                  Preventive Care
+                </p>
+                <a
+                  href="#"
+                  class="text-sm sm:text-base block lg:text-lg mt-[5px] underline text-start"
+                >
+                  Animal Health Check
+                </a>
+                <a
+                  href="#"
+                  class="text-sm sm:text-base block lg:text-lg mt-[5px] underline text-start"
+                >
+                  Vaccinations
+                </a>
+                <a
+                  href="#"
+                  class="text-sm sm:text-base block lg:text-lg mt-[5px] underline text-start"
+                >
+                  Dental
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="bg-[#494336] flex flex-col justify-start lg:max-w-[350px] xl:max-w-[400px] sm:pl-5 sm:pt-[25px] pt-3 pl-3 sm:pr-4 pr-3 h-[339px] sm:h-[419px]"
+            >
+              <div class="max-w-[93px]">
+                <img
+                  class="w-full"
+                  src="./assest/img/sick.png"
+                  alt="prevent-care"
+                />
+              </div>
+              <div class="text-[#D7D9DD]">
+                <p
+                  class="text-2xl sm:text-[30px] block lg:text-[36px] pt-3 sm:pt-7 md:pt-10 2xl:whitespace-nowrap lg:pt-[30px]"
+                >
+                  Sick Patient Care
+                </p>
+                <a
+                  href="#"
+                  class="text-sm sm:text-base block max-w-[163px] lg:text-lg mt-[5px] underline text-start"
+                >
+                  Urgent & Emergency Care
+                </a>
+                <a
+                  href="#"
+                  class="text-sm sm:text-base block lg:text-lg mt-[5px] underline text-start"
+                >
+                  Telemedicine
+                </a>
+                <a
+                  href="#"
+                  class="text-sm sm:text-base block lg:text-lg mt-[5px] underline text-start"
+                >
+                  Diagnostics
+                </a>
+                <a
+                  href="#"
+                  class="text-sm sm:text-base block lg:text-lg mt-[5px] underline text-start"
+                >
+                  Pharmacy
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="bg-[#494336] flex flex-col justify-start lg:max-w-[350px] xl:max-w-[400px] sm:pl-5 sm:pt-[25px] pt-3 pl-3 sm:pr-4 pr-3 h-[339px] sm:h-[419px]"
+            >
+              <div class="max-w-[93px]">
+                <img
+                  class="w-full"
+                  src="./assest/img/Surgery.png"
+                  alt="prevent-care"
+                />
+              </div>
+              <div class="text-[#D7D9DD]">
+                <p
+                  class="text-2xl sm:text-[30px] block whitespace-nowrap lg:text-[36px] pt-3 sm:pt-7 md:pt-10 lg:pt-[33px]"
+                >
+                  Surgery
+                </p>
+                <a
+                  href="#"
+                  class="text-sm sm:text-base block lg:text-lg mt-[5px] underline text-start"
+                >
+                  Surgeries
+                </a>
+                <a
+                  href="#"
+                  class="text-sm sm:text-base block lg:text-lg mt-[5px] underline text-start"
+                >
+                  Spay & Neuter
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="bg-[#494336] flex flex-col justify-start lg:max-w-[350px] xl:max-w-[400px] sm:pl-5 sm:pt-[25px] pt-3 pl-3 sm:pr-4 pr-3 h-[339px] sm:h-[419px]"
+            >
+              <div class="max-w-[93px]">
+                <img
+                  class="w-full"
+                  src="./assest/img/Add-service.png"
+                  alt="prevent-care"
+                />
+              </div>
+              <div class="text-[#D7D9DD]">
+                <p
+                  class="text-2xl sm:text-[30px] lg:text-[36px] pt-3 sm:pt-7 md:pt-10 lg:pt-[30px]"
+                >
+                  Additional Services
+                </p>
+                <a
+                  href="#"
+                  class="text-sm sm:text-base block lg:text-lg mt-[5px] underline text-start"
+                >
+                  Travel Certificates
+                </a>
+                <a
+                  href="#"
+                  class="text-sm sm:text-base block lg:text-lg mt-[5px] underline text-start"
+                >
+                  Skin & Dermatology
+                </a>
+                <a
+                  href="#"
+                  class="text-sm sm:text-base block lg:text-lg mt-[5px] underline text-start"
+                >
+                  Euthanasia
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="relative">
+        <div
+          class="swiper-pagination absolute !-top-20 !right-0 !left-0 !w-auto"
+        ></div>
+      </div>
+    </section>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
+    <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 10,
         pagination: {
           el: ".swiper-pagination",
+          clickable: true,
         },
         breakpoints: {
           300: {
             slidesPerView: 1,
             spaceBetween: 20,
-            loop: true,
-
-            autoplay: {
-              delay: 2500,
-              disableOnInteraction: false,
-            },
           },
           640: {
             slidesPerView: 2,
             spaceBetween: 20,
-            loop: true,
-
-            autoplay: {
-              delay: 2500,
-              disableOnInteraction: false,
-            },
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 50,
           },
         },
       });
