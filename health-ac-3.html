@@ -32,42 +32,40 @@
           <div
             class="flex pb-[18px] pt-[15px] sm:pt-[11px] items-center justify-between"
           >
-            <a href="#" class="block max-w-[90px] sm:max-w-[114px]">
+            <a href="/" class="block max-w-[90px] sm:max-w-[114px]">
               <img class="w-full" src="./assest/img/logo.png" alt="" />
             </a>
             <div class="lg:flex gap-[33px] hidden items-center">
               <a
-                href="#services"
-                class="text-sm text-[#D7D9DD] hover:text-[#8fd9d9] duration-300 font-medium tracking-[1.4px]"
+                href="./service.html"
+                class="text-sm text-[#D7D9DD] hover:text-[#8fd9d9] duration-300 font-medium tracking-[1.4px] gred-hv"
                 >SERVICES</a
               >
               <a
-                href="#about"
-                class="text-sm text-[#D7D9DD] hover:text-[#8fd9d9] duration-300 font-medium tracking-[1.4px]"
+                href="./about-us.html"
+                class="text-sm text-[#D7D9DD] hover:text-[#8fd9d9] duration-300 font-medium tracking-[1.4px] gred-hv"
                 >ABOUT US</a
               >
               <a
-                href="#location"
-                class="text-sm text-[#D7D9DD] hover:text-[#8fd9d9] duration-300 font-medium tracking-[1.4px]"
+                href="./map.html"
+                class="text-sm text-[#D7D9DD] hover:text-[#8fd9d9] duration-300 font-medium tracking-[1.4px] gred-hv"
                 >LOCATION</a
               >
               <a
-                href="#career"
-                class="text-sm text-[#D7D9DD] hover:text-[#8fd9d9] duration-300 font-medium tracking-[1.4px]"
+                href="./carrer.html"
+                class="text-sm text-[#D7D9DD] hover:text-[#8fd9d9] duration-300 font-medium tracking-[1.4px] gred-hv"
                 >CAREER</a
               >
               <a
-                href="#portal"
-                class="text-sm text-[#D7D9DD] hover:text-[#8fd9d9] duration-300 gred-hv font-medium tracking-[1.4px]"
+                href="/"
+                class="text-sm text-[#D7D9DD] gred-hv hover:text-[#8fd9d9] duration-300 gred-hv font-medium tracking-[1.4px]"
                 >PATIENT PORTAL</a
               >
-              <div class="w-fit py-2 sm:py-3 overflow-hidden z-[1] relative">
-                <a
-                  href="#"
-                  class="text-base sm:text-lg font-medium text-[#494336] bg-gred roboto py-2 sm:py-3 px-6 sm:px-8 lg:px-[38px] font-medium tracking-[1.4px] rounded-[27px] duration-300"
-                  >BOOK NOW</a
-                >
-              </div>
+              <a
+                href="#"
+                class="text-base sm:text-lg font-medium text-[#494336] bg-gred roboto py-2 sm:py-3 px-6 sm:px-8 lg:px-[38px] font-medium tracking-[1.4px] rounded-[27px] hover:shadow-xl duration-300"
+                >BOOK NOW</a
+              >
             </div>
             <div class="lg:hidden">
               <img
@@ -80,6 +78,51 @@
           </div>
         </div>
       </div>
+
+      <!-- Sidebar -->
+      <div
+        id="sidebar"
+        class="sidebar fixed top-0 right-0 h-full w-64 bg-[#494336] w-full sm:w-[400px] text-white shadow-xl transition-all duration-300 ease-in-out z-50 hidden"
+      >
+        <div
+          class="flex justify-between -mt-3 items-center max-w-[1440px] max-[359px]:px-4 px-8 md:px-10 xl:px-[50px] mx-auto"
+        >
+          <div class="">
+            <a href="/" class="block !w-[90px] sm:w-[114px]">
+              <img
+                width="100%"
+                class="w-full"
+                src="./assest/img/logo.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="flex justify-end p-6">
+            <button id="closeSidebar" class="text-white text-6xl">
+              &times;
+            </button>
+          </div>
+        </div>
+        <ul class="gap-y-8 p-6 flex flex-col justify-center items-center">
+          <li><a href="./service.html" class="text-lg">SERVICES</a></li>
+          <li><a href="./about-us.html" class="text-lg">ABOUT US</a></li>
+          <li><a href="./map.html" class="text-lg">LOCATION</a></li>
+          <li><a href="carrer.html" class="text-lg">CAREER</a></li>
+          <li><a href="/" class="text-lg">PATIENT PORTAL</a></li>
+          <li>
+            <div class="w-fit py-2 sm:py-3 overflow-hidden z-[1] relative">
+              <a
+                href="#"
+                class="text-base sm:text-lg font-medium text-[#494336] bg-gred roboto py-2 sm:py-3 px-6 sm:px-8 lg:px-[38px] font-medium tracking-[1.4px] rounded-[27px] duration-300"
+                >BOOK NOW</a
+              >
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Background Overlay -->
+      <div id="overlay" class="hidden fixed inset-0 bg-black/50 z-40"></div>
     </nav>
     <nav>
       <div class="bg-[#494336] fixed left-0 z-[11] right-0 top-0">
@@ -163,11 +206,11 @@
           </div>
         </div>
         <ul class="gap-y-8 p-6 flex flex-col justify-center items-center">
-          <li><a href="#" class="text-lg">SERVICES</a></li>
-          <li><a href="#" class="text-lg">ABOUT US</a></li>
-          <li><a href="#" class="text-lg">LOCATION</a></li>
-          <li><a href="#" class="text-lg">CAREER</a></li>
-          <li><a href="#" class="text-lg">PATIENT PORTAL</a></li>
+          <li><a href="./service.html" class="text-lg">SERVICES</a></li>
+          <li><a href="./about-us.html" class="text-lg">ABOUT US</a></li>
+          <li><a href="./map.html" class="text-lg">LOCATION</a></li>
+          <li><a href="carrer.html" class="text-lg">CAREER</a></li>
+          <li><a href="/" class="text-lg">PATIENT PORTAL</a></li>
           <li>
             <div class="w-fit py-2 sm:py-3 overflow-hidden z-[1] relative">
               <a
@@ -1186,23 +1229,23 @@
                 </p>
                 <div class="flex flex-col gap-[7px]">
                   <a
-                    class="text-[#D7D9DD] text-sm sm:text-base text-underline"
-                    href="#"
+                    class="text-[#D7D9DD] text-sm sm:text-base text-underline duration-300 gred-hv"
+                    href="./pharmacy.html"
                     >Preventive Care</a
                   >
                   <a
-                    class="text-[#D7D9DD] text-sm sm:text-base text-underline"
-                    href="#"
+                    class="text-[#D7D9DD] text-sm sm:text-base text-underline duration-300 gred-hv"
+                    href="./skin.html"
                     >Sick Patient Care</a
                   >
                   <a
-                    class="text-[#D7D9DD] text-sm sm:text-base text-underline"
-                    href="#"
+                    class="text-[#D7D9DD] text-sm sm:text-base text-underline duration-300 gred-hv"
+                    href="./surgery.html"
                     >Surgery</a
                   >
                   <a
-                    class="text-[#D7D9DD] text-sm sm:text-base text-underline"
-                    href="#"
+                    class="text-[#D7D9DD] text-sm sm:text-base text-underline duration-300 gred-hv"
+                    href="service.html"
                     >Additional Services</a
                   >
                 </div>
@@ -1215,13 +1258,13 @@
                 </p>
                 <div class="flex flex-col gap-[7px]">
                   <a
-                    class="text-[#D7D9DD] text-sm sm:text-base text-underline"
-                    href="#"
+                    class="text-[#D7D9DD] text-sm sm:text-base text-underline duration-300 gred-hv"
+                    href="./about-us.html"
                     >About us</a
                   >
                   <a
-                    class="text-[#D7D9DD] text-sm sm:text-base text-underline"
-                    href="#"
+                    class="text-[#D7D9DD] text-sm sm:text-base text-underline duration-300 gred-hv"
+                    href="./carrer.html"
                     >Carreers</a
                   >
                 </div>
@@ -1236,13 +1279,13 @@
                 </p>
                 <div class="flex flex-col gap-[7px]">
                   <a
-                    class="text-[#D7D9DD] text-sm sm:text-base text-underline"
-                    href="#"
+                    class="text-[#D7D9DD] text-sm sm:text-base text-underline duration-300 gred-hv"
+                    href="tel: +91 999999999"
                     >Phone: (212) 123-4567</a
                   >
                   <a
-                    class="text-[#D7D9DD] text-sm sm:text-base text-underline"
-                    href="#"
+                    class="text-[#D7D9DD] text-sm sm:text-base text-underline duration-300 gred-hv"
+                    href="mailto:abc@gmailcom"
                     >hello@nebulavets.com</a
                   >
                 </div>
