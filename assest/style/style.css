@@ -18,10 +18,55 @@ body {
   margin: 0px auto;
 }
 .bg-gred {
-  background: var(
-    --Gradient-02,
-    linear-gradient(90deg, #ffa280 0%, #8fd9d9 100%)
-  );
+  position: relative;
+  /* background: linear-gradient(90deg, #ffa280 0%, #8fd9d9 100%); */
+  transition: all 1 s ease-in-out !important;
+  overflow: hidden;
+}
+.bg-gred::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  left: 0;
+  top: 0;
+  background: linear-gradient(150deg, #ffa280 0%, #8fd9d9 100%);
+  transition: all 1s ease-in-out;
+  border-radius: 27px;
+  z-index: -1;
+}
+.bg-gred::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  left: 0;
+  top: 0;
+  background: linear-gradient(150deg, #ffa280 0%, #8fd9d9 100%);
+  transition: all 01s ease-in-out;
+  border-radius: 27px;
+  z-index: -2;
+}
+.bg-gred:hover::after {
+  transform: rotate(180deg);
+}
+.bg-gred:hover::before {
+  transform: rotate(-180deg);
+}
+
+/* @keyframes AnimationName {
+  0% {
+    background: linear-gradient(90deg, #ffa280 0%, #8fd9d9 100%);
+  }
+  50% {
+    background: linear-gradient(10deg, #ffa280 0%, #8fd9d9 100%);
+  }
+  100% {
+    background: linear-gradient(90deg, #ffa280 0%, #8fd9d9 100%);
+  }
+} */
+.bg-gred:hover {
+  animation: AnimationName 3s ease infinite;
 }
 .border-bot {
   border-bottom: 1px solid transparent;
@@ -61,6 +106,12 @@ body {
 }
 
 .text-gredient {
+  background: linear-gradient(90deg, #ffa280 0%, #8fd9cb 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gred-hv:hover {
   background: linear-gradient(90deg, #ffa280 0%, #8fd9cb 100%);
   background-clip: text;
   -webkit-background-clip: text;
