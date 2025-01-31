@@ -244,7 +244,7 @@
           </p>
           <div>
             <button
-              class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner pb-[32px]"
+              class="toggle-button w-full group items-center border-b-[2px] border-solid border-c-liner pb-[32px]"
             >
               <div class="flex justify-between w-full items-center gap-5">
                 <p
@@ -252,7 +252,7 @@
                 >
                   Immediate Access to Care
                 </p>
-                <span class="first-img">
+                <span class="first-img transition-transform">
                   <svg
                     class="max-md:w-6"
                     xmlns="http://www.w3.org/2000/svg"
@@ -366,7 +366,7 @@
               </p>
             </button>
             <button
-              class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner py-[32px]"
+              class="toggle-button w-full group items-center border-b-[2px] border-solid border-c-liner py-[32px]"
             >
               <div class="flex justify-between w-full items-center gap-5">
                 <p
@@ -374,7 +374,7 @@
                 >
                   Skilled Veterinary Team
                 </p>
-                <span class="first-img">
+                <span class="first-img transition-transform">
                   <svg
                     class="max-md:w-6"
                     xmlns="http://www.w3.org/2000/svg"
@@ -488,7 +488,7 @@
               </p>
             </button>
             <button
-              class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner py-[32px]"
+              class="toggle-button w-full group items-center border-b-[2px] border-solid border-c-liner py-[32px]"
             >
               <div class="flex justify-between w-full items-center gap-5">
                 <p
@@ -496,7 +496,7 @@
                 >
                   State-of-the-Art Facilities
                 </p>
-                <span class="first-img">
+                <span class="first-img transition-transform">
                   <svg
                     class="max-md:w-6"
                     xmlns="http://www.w3.org/2000/svg"
@@ -611,7 +611,7 @@
               </p>
             </button>
             <button
-              class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner py-[32px]"
+              class="toggle-button w-full group items-center border-b-[2px] border-solid border-c-liner py-[32px]"
             >
               <div class="flex justify-between w-full items-center gap-5">
                 <p
@@ -619,7 +619,7 @@
                 >
                   Compassionate and Calm Approach
                 </p>
-                <span class="first-img">
+                <span class="first-img transition-transform">
                   <svg
                     class="max-md:w-6"
                     xmlns="http://www.w3.org/2000/svg"
@@ -734,7 +734,7 @@
               </p>
             </button>
             <button
-              class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner py-[32px]"
+              class="toggle-button w-full group items-center border-b-[2px] border-solid border-c-liner py-[32px]"
             >
               <div class="flex justify-between w-full items-center gap-5">
                 <p
@@ -742,7 +742,7 @@
                 >
                   Comprehensive Emergency Services
                 </p>
-                <span class="first-img">
+                <span class="first-img transition-transform">
                   <svg
                     class="max-md:w-6"
                     xmlns="http://www.w3.org/2000/svg"
@@ -856,7 +856,7 @@
               </p>
             </button>
             <button
-              class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner py-[32px]"
+              class="toggle-button w-full group items-center border-b-[2px] border-solid border-c-liner py-[32px]"
             >
               <div class="flex justify-between w-full items-center gap-5">
                 <p
@@ -864,7 +864,7 @@
                 >
                   Collaborative Care
                 </p>
-                <span class="first-img">
+                <span class="first-img transition-transform">
                   <svg
                     class="max-md:w-6"
                     xmlns="http://www.w3.org/2000/svg"
@@ -978,7 +978,7 @@
               </p>
             </button>
             <button
-              class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner py-[32px]"
+              class="toggle-button w-full group items-center border-b-[2px] border-solid border-c-liner py-[32px]"
             >
               <div class="flex justify-between w-full items-center gap-5">
                 <p
@@ -986,7 +986,7 @@
                 >
                   Seamless Referrals
                 </p>
-                <span class="first-img">
+                <span class="first-img transition-transform">
                   <svg
                     class="max-md:w-6"
                     xmlns="http://www.w3.org/2000/svg"
@@ -1100,7 +1100,7 @@
               </p>
             </button>
             <button
-              class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner py-[32px]"
+              class="toggle-button w-full group items-center border-b-[2px] border-solid border-c-liner py-[32px]"
             >
               <div class="flex justify-between w-full items-center gap-5">
                 <p
@@ -1108,7 +1108,7 @@
                 >
                   Emergency Preparedness
                 </p>
-                <span class="first-img">
+                <span class="first-img transition-transform">
                   <svg
                     class="max-md:w-6"
                     xmlns="http://www.w3.org/2000/svg"
@@ -1262,7 +1262,7 @@
       </div>
     </section>
     <!-- footer -->
-      <footer>
+    <footer>
       <div class="bg-[#494336]">
         <div class="max-w-[1364px] px-8 max-sm:pb-[111px] py-[60px] mx-auto">
           <div class="flex justify-between gap-10 max-[950px]:flex-wrap">
@@ -1469,31 +1469,17 @@
       });
     </script>
     <script>
-      const buttons = document.querySelectorAll(".toggle-button");
-      buttons.forEach((button) => {
+      document.querySelectorAll(".toggle-button").forEach((button) => {
         button.addEventListener("click", () => {
-          const firstImg = button.querySelector(".first-img");
-          const secondImg = button.querySelector(".second-img");
           const description = button.querySelector(".description");
-          const btn4 = button.querySelector(".btn4");
-          // Close all other sections first
-          buttons.forEach((otherButton) => {
-            if (otherButton !== button) {
-              const otherFirstImg = otherButton.querySelector(".first-img");
-              const otherSecondImg = otherButton.querySelector(".second-img");
-              const otherDescription =
-                otherButton.querySelector(".description");
+          const icon = button.querySelector("span");
 
-              otherFirstImg.classList.remove("hidden");
-              otherSecondImg.classList.add("hidden");
-              otherDescription.classList.add("hidden");
-              // otherButton.style.backgroundColor = "#f3f3f3"; // Reset background color
-            }
-          });
-          // Toggle the clicked section
-          firstImg.classList.toggle("hidden");
-          secondImg.classList.toggle("hidden");
           description.classList.toggle("hidden");
+          if (description.classList.contains("hidden")) {
+            icon.classList.remove("rotate-45");
+          } else {
+            icon.classList.add("rotate-45");
+          }
         });
       });
     </script>

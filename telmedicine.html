@@ -16,6 +16,14 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
+  <style>
+    .swiper-pagination-bullet-active {
+      background: #000000 !important ;
+    }
+    .swiper-pagination-bullet {
+      background: #464334 !important;
+    }
+  </style>
   <body>
     <nav>
       <div class="bg-[#494336] fixed left-0 z-[11] right-0 top-0">
@@ -557,31 +565,17 @@
       });
     </script>
     <script>
-      const buttons = document.querySelectorAll(".toggle-button");
-      buttons.forEach((button) => {
+      document.querySelectorAll(".toggle-button").forEach((button) => {
         button.addEventListener("click", () => {
-          const firstImg = button.querySelector(".first-img");
-          const secondImg = button.querySelector(".second-img");
           const description = button.querySelector(".description");
-          const btn4 = button.querySelector(".btn4");
-          // Close all other sections first
-          buttons.forEach((otherButton) => {
-            if (otherButton !== button) {
-              const otherFirstImg = otherButton.querySelector(".first-img");
-              const otherSecondImg = otherButton.querySelector(".second-img");
-              const otherDescription =
-                otherButton.querySelector(".description");
+          const icon = button.querySelector("span");
 
-              otherFirstImg.classList.remove("hidden");
-              otherSecondImg.classList.add("hidden");
-              otherDescription.classList.add("hidden");
-              // otherButton.style.backgroundColor = "#f3f3f3"; // Reset background color
-            }
-          });
-          // Toggle the clicked section
-          firstImg.classList.toggle("hidden");
-          secondImg.classList.toggle("hidden");
           description.classList.toggle("hidden");
+          if (description.classList.contains("hidden")) {
+            icon.classList.remove("rotate-45");
+          } else {
+            icon.classList.add("rotate-45");
+          }
         });
       });
     </script>
