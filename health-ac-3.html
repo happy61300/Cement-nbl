@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -137,6 +139,9 @@
         <div class="max-w-[1160px] px-[32px] sm:px-[40px] mx-auto">
           <div
             class="max-w-[660px] pt-[30px] sm:pt-[50px] md:pt-[80px] lg:pt-[100px] xl:pt-[140px] pb-[200px] min-[950px]:pb-[90px] text-[#D7D9DD]"
+            data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
           >
             <p
               class="text-[32px] sm:text-[40px] mt-40 md:mt-0 md:text-[50px] lg:text-[60px] xl:text-[70px] leading-[normal]"
@@ -180,6 +185,9 @@
         >
           <div
             class="text-sm sm:text-base md:text-lg lg:text-xl text-[#494336]"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
           >
             <p class="text-2xl sm:text-3xl lg:text-[36px]">
               Animal Health Check Exam
@@ -215,9 +223,12 @@
     <!--   Why choose Nebula Vets?k -->
 
     <section>
-      <div class="bg-white">
+      <div class="bg-white overflow-hidden">
         <div
           class="max-w-[1160px] px-[32px] sm:px-[40px] py-[60px] sm:py-[80px] mx-auto"
+          data-aos="flip-up"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
         >
           <p
             class="text-[#464334] text-2xl sm:text-[30px] md:text-[36px] lg:text-[42px] xl:text-[48px] mb-10 max-sm:text-center md:mb-[58px]"
@@ -671,7 +682,11 @@
     <div
       class="max-w-[1160px] sm:px-10 px-8 py-[60px] md:py-[70px] xl:py-20 mx-auto"
     >
-      <div class="">
+      <div
+        data-aos="fade-right"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+      >
         <div
           class="text-[#494336] justify-between gap-[13px] md:gap-10 lg:gap-[65px]"
         >
@@ -707,7 +722,12 @@
         <div
           class="max-w-[1160px] px-[32px] sm:px-[40px] pt-[60px] sm:pt-[80px] pb-[100px] sm:pb-[90px] mx-auto"
         >
-          <div class="max-w-[530px]">
+          <div
+            class="max-w-[530px]"
+            data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
             <p
               class="text-2xl sm:text-[30px] md:text-[36px] text-[#D7D9DD] mb-[45px] leading-[109%]"
             >
@@ -946,6 +966,10 @@
           }
         });
       });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>

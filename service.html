@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -144,6 +146,9 @@
         <div class="max-w-[1220px] px-[32px] sm:px-[40px] mx-auto">
           <div
             class="max-w-[660px] pt-[30px] sm:pt-[50px] md:pt-[80px] lg:pt-[100px] xl:pt-[140px] pb-[280px] min-[950px]:pb-[90px]"
+            data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
           >
             <p
               class="text-[32px] sm:text-[40px] md:text-[50px] lg:text-[60px] xl:text-[70px] text-[#D7D9DD] leading-[normal]"
@@ -172,7 +177,12 @@
     </section>
     <!-- slider -->
     <div class="py-20 bg-[#D7D9DD] px-8 sm:px-0">
-      <div class="swiper mySwiper">
+      <div
+        class="swiper mySwiper"
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+      >
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="w-full h-[296px] sm:h-[420px]">
@@ -272,7 +282,7 @@
           </div>
         </div>
       </div>
-      <div>
+      <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
         <div class="flex max-md:flex-wrap max-w-[1440px] mx-auto">
           <div class="md:w-[40%] xl:max-w-[620px]">
             <div
@@ -402,7 +412,7 @@
           </div>
         </div>
       </div>
-      <div>
+      <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
         <div class="flex max-md:flex-wrap max-w-[1440px] mx-auto">
           <div class="md:w-[40%] xl:max-w-[620px]">
             <div
@@ -551,7 +561,7 @@
           </div>
         </div>
       </div>
-      <div>
+      <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
         <div class="flex max-md:flex-wrap max-w-[1440px] mx-auto">
           <div class="md:w-[40%] xl:max-w-[620px]">
             <div
@@ -653,7 +663,7 @@
           </div>
         </div>
       </div>
-      <div>
+      <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
         <div class="flex max-md:flex-wrap max-w-[1440px] mx-auto">
           <div class="md:w-[40%] xl:max-w-[620px]">
             <div
@@ -1125,36 +1135,10 @@
         },
       });
     </script>
-    <!-- <script>
-      function openTab(tabIndex) {
-        // Hide all tab contents
-        var tabs = document.querySelectorAll(".tab-content");
-        tabs.forEach(function (tab) {
-          tab.classList.add("hidden");
-        });
 
-        document.getElementById("tab" + tabIndex).classList.remove("hidden");
-
-        var buttons = document.querySelectorAll(".tab-btn");
-        buttons.forEach(function (button) {
-          button.classList.remove(
-            "text-[#D7D9DD]",
-            "opacity-100",
-            "border-b-[1px]"
-          );
-          button.classList.add("opacity-70", "text-[#D7D9DD]");
-        });
-
-        var activeButton = document.getElementById("btn" + tabIndex);
-        activeButton.classList.add(
-          "opacity-100",
-          "text-[#D7D9DD]",
-          "border-b-[1px]"
-        );
-      }
-
-      // Default to the first tab open
-      openTab(1);
-    </script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

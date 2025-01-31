@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nebula vets</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link
       rel="shortcut icon"
       href="./assest/img/favicon.ico"
@@ -157,6 +159,9 @@
         <div class="max-w-[1160px] px-[32px] sm:px-[40px] mx-auto">
           <div
             class="max-w-[664px] pt-[176px] md:pt-[140px] pb-[65px] md:pb-[90px]"
+            data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
           >
             <p
               class="text-[32px] sm:text-[40px] md:text-[50px] lg:text-[60px] xl:text-[70px] text-[#D7D9DD] leading-[normal] mb-[30px] sm:mb-7"
@@ -192,7 +197,12 @@
       </div>
     </section>
     <!-- slider -->
-    <section class="!bg-[#494336] max-[400px]:px-8">
+    <section
+      class="!bg-[#494336] max-[400px]:px-8"
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="1000"
+    >
       <div
         class="swiper mySwiper !pb-[60px] sm:!pb-[90px] md:!pb-[120px] !max-w-[1440px] !mx-auto"
       >
@@ -249,7 +259,11 @@
         <div
           class="max-w-[1160px] mx-auto px-[32px] sm:px-[40px] py-15 sm:py-20 z-[3] relative"
         >
-          <div>
+          <div
+            data-aos="flip-up"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+          >
             <p class="text-[#494336] text-[28px] mb-10 hidden sm:block roboto">
               Why Choose a Career at Nebula Vets:
             </p>
@@ -258,7 +272,7 @@
             </p>
             <div>
               <button
-                class="toggle-button w-full group items-center border-b-[2px] border-solid border-c-liner pb-[32px]"
+                class="toggle-button w-full group items-center border-b-[2px] border-solid border-gred-linear pb-[32px]"
               >
                 <div class="flex justify-between w-full items-center gap-5">
                   <p
@@ -382,7 +396,7 @@
                 </p>
               </button>
               <button
-                class="toggle-button w-full group items-center border-b-[2px] border-solid border-c-liner py-[32px]"
+                class="toggle-button w-full group items-center border-b-[2px] border-solid border-gred-linear py-[32px]"
               >
                 <div class="flex justify-between w-full items-center gap-5">
                   <p
@@ -504,7 +518,7 @@
                 </p>
               </button>
               <button
-                class="toggle-button w-full group items-center border-b-[2px] border-solid border-c-liner py-[32px]"
+                class="toggle-button w-full group items-center border-b-[2px] border-solid border-gred-linear py-[32px]"
               >
                 <div class="flex justify-between w-full items-center gap-5">
                   <p
@@ -627,7 +641,7 @@
                 </p>
               </button>
               <button
-                class="toggle-button w-full group items-center border-b-[2px] border-solid border-c-liner py-[32px]"
+                class="toggle-button w-full group items-center border-b-[2px] border-solid border-gred-linear py-[32px]"
               >
                 <div class="flex justify-between w-full items-center gap-5">
                   <p
@@ -750,7 +764,7 @@
                 </p>
               </button>
               <button
-                class="toggle-button w-full group items-center border-b-[2px] border-solid border-c-liner py-[32px]"
+                class="toggle-button w-full group items-center border-b-[2px] border-solid border-gred-linear py-[32px]"
               >
                 <div class="flex justify-between w-full items-center gap-5">
                   <p
@@ -873,7 +887,7 @@
                 </p>
               </button>
               <button
-                class="toggle-button w-full group items-center border-b-[2px] border-solid border-c-liner py-[32px]"
+                class="toggle-button w-full group items-center border-b-[2px] border-solid border-gred-linear py-[32px]"
               >
                 <div class="flex justify-between w-full items-center gap-5">
                   <p
@@ -1016,7 +1030,11 @@
         <div
           class="max-w-[1160px] px-[32px] sm:px-[40px] py-[60px] sm:py-[80px] mx-auto"
         >
-          <div class="max-w-[829px]">
+          <div
+            class="max-w-[829px]"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
             <p
               class="text-2xl sm:text-[30px] md:text-[36px] text-[#D7D9DD] mb-[46px] md:mb-[30px]"
             >
@@ -1332,6 +1350,10 @@
           body.classList.remove("overflow-hidden");
         });
       });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nebula vets</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link
       rel="shortcut icon"
       href="./assest/img/favicon.ico"
@@ -130,6 +132,9 @@
         <div class="max-w-[1160px] px-[32px] sm:px-[40px] mx-auto">
           <div
             class="max-w-[664px] pt-[176px] md:pt-[140px] pb-[65px] md:pb-[90px]"
+            data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
           >
             <p
               class="text-[32px] sm:text-[40px] md:text-[50px] lg:text-[60px] xl:text-[70px] text-[#D7D9DD] leading-[normal]"
@@ -167,9 +172,14 @@
         <div
           class="max-w-[1360px] md:px-[40px] mx-auto pt-15 md:pt-20 pb-[120px] md:pb-[140px] relative z-[1]"
         >
-          <div class="flex items-center max-md:flex-wrap-reverse">
+          <div
+            class="flex items-center max-md:flex-wrap-reverse overflow-hidden"
+          >
             <div
               class="max-md:px-8 w-full md:w-[39.17%] flex flex-col gap-[38.5px] sm:gap-8 xl:ml-[100px] max-md:mt-15"
+              data-aos="fade-right"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
             >
               <p
                 class="text-[#494336] text-2xl sm:text-[26px] md:text-[30px] lg:text-[36px]"
@@ -207,7 +217,12 @@
                 >
               </p>
             </div>
-            <div class="w-full md:w-[60.83%]">
+            <div
+              class="w-full md:w-[60.83%]"
+              data-aos="fade-left"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+            >
               <div
                 class="mapouter relative text-right w-full h-[318px] sm:h-[500px] md:h-[570px]"
               >
@@ -248,7 +263,12 @@
         <div
           class="max-w-[1160px] px-[32px] sm:px-[40px] pt-[60px] pb-[200px] sm:py-[112px] mx-auto"
         >
-          <div class="max-w-[568px]">
+          <div
+            class="max-w-[568px]"
+            data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
             <p
               class="text-2xl sm:text-[30px] md:text-[36px] lg:text-[42px] xl:text-[48px] text-[#D7D9DD] mb-[40px] sm:mb-[60px] md:mb-[80px]"
             >
@@ -473,6 +493,10 @@
           body.classList.remove("overflow-hidden");
         });
       });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>

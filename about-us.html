@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nebula vets</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link
       rel="shortcut icon"
       href="./assest/img/favicon.ico"
@@ -133,6 +135,9 @@
       <div class="bg-[#494336] mt-[85px] sm:mt-[88px] lg:mt-[98px] relative">
         <p
           class="text-[32px] sm:text-[40px] md:text-[50px] lg:text-[60px] xl:text-[70px] text-[#D7D9DD] leading-[normal] mr-8 sm:hidden max-w-[1220px] px-[32px] sm:px-[40px] mx-auto"
+          data-aos="fade-right"
+          data-aos-easing="linear"
+          data-aos-duration="1000"
         >
           About <br />
           Nebula Vets
@@ -142,12 +147,18 @@
         </div>
         <div
           class="sm:absolute sm:right-5 top-[15%] sm:top-[27%] md:top-[150px] xl:top-[72px] xl:max-w-[636px] sm:max-w-[300px] lg:max-w-[450px] left-0 sm:left-auto right-0 mt-14"
+          data-aos="flip-right"
+          data-aos-easing="linear"
+          data-aos-duration="1000"
         >
           <img class="w-full" src="./assest/img/about-hero.png" alt="" />
         </div>
         <div class="max-w-[1220px] px-[32px] sm:px-[40px] mx-auto">
           <div
             class="sm:max-w-[270px] md:max-w-[400px] xl:max-w-[500px] 2xl:max-w-[664px] pt-[16px] sm:pt-[140px] pb-[65px] md:pb-[123px]"
+            data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
           >
             <p
               class="text-[32px] sm:text-[40px] md:text-[50px] lg:text-[60px] xl:text-[70px] text-[#D7D9DD] leading-[normal] mr-8 hidden sm:block"
@@ -185,6 +196,9 @@
         >
           <div
             class="flex flex-wrap lg:flex-nowrap md:gap-[35px] xl:gap-[60px]"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
           >
             <div class="w-full lg:min-w-[400px] xl:min-w-[600px] relative">
               <img
@@ -238,6 +252,9 @@
         >
           <div
             class="flex flex-wrap-reverse lg:flex-nowrap md:gap-[35px] xl:gap-[60px]"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
           >
             <div class="text-[#464334] max-w-[547px] mt-[60px] md:mt-0">
               <p class="text-base sm:text-lg md:text-xl lg:text-2xl roboto">
@@ -290,6 +307,9 @@
         >
           <div
             class="flex flex-wrap lg:flex-nowrap md:gap-[35px] xl:gap-[60px]"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
           >
             <div class="w-full lg:min-w-[400px] xl:min-w-[600px] relative">
               <img
@@ -330,7 +350,12 @@
     </section>
     <!-- Meet our veterinary team: -->
     <div class="text-[#D7D9DD] md:pt-20 md:pb-[85px] py-[60px] bg-[#494336]">
-      <div class="max-w-[1440px] px-[51px] mx-auto">
+      <div
+        class="max-w-[1440px] px-[51px] mx-auto"
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1000"
+      >
         <h1
           class="text-2xl text-center sm:text-[48px] md:text-[60px] xl:text-[70px]"
         >
@@ -630,6 +655,10 @@
           body.classList.remove("overflow-hidden");
         });
       });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
