@@ -11,12 +11,7 @@ body {
   font-family: "Avantt";
   background: var(--Grey-2, rgba(215, 217, 221, 0.5));
 }
-.container {
-  max-width: 1440px;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin: 0px auto;
-}
+
 .bg-gred {
   position: relative;
   /* background: linear-gradient(90deg, #ffa280 0%, #8fd9d9 100%); */
@@ -54,17 +49,6 @@ body {
   transform: rotate(-180deg);
 }
 
-/* @keyframes AnimationName {
-  0% {
-    background: linear-gradient(90deg, #ffa280 0%, #8fd9d9 100%);
-  }
-  50% {
-    background: linear-gradient(10deg, #ffa280 0%, #8fd9d9 100%);
-  }
-  100% {
-    background: linear-gradient(90deg, #ffa280 0%, #8fd9d9 100%);
-  }
-} */
 .bg-gred:hover {
   animation: AnimationName 3s ease infinite;
 }
@@ -73,32 +57,7 @@ body {
   border-image: 1px solid linear-gradient(90deg, #ffa280 0%, #8fd9d9 100%);
   border-image-slice: 1;
 }
-/* .gred-hv:hover {
-  border: var(--Gradient-02, linear-gradient(90deg, #ffa280 0%, #8fd9d9 100%));
-} */
-@media (max-width: 1024px) {
-  .container {
-    padding-left: 26px;
-    padding-right: 26px;
-  }
-}
-@media (max-width: 768px) {
-  .container {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-  @media (max-width: 639px) {
-    .swiper-pagination-bullet {
-      background: white !important;
-    }
-  }
-}
-@media (max-width: 359px) {
-  .container {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-}
+
 .border-gred-linear {
   border-bottom: 2px solid transparent;
   border-image: linear-gradient(90deg, #ffa280 0%, #8fd9d9 100%);
@@ -117,7 +76,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-/* slider */
+
 .rotate-45 {
   transform: rotate(90deg);
 }
